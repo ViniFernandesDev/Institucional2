@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 /*RESET*/
 *, *:before, *:after {
   box-sizing: border-box;
@@ -91,26 +91,26 @@ img {
 
 /**/
 body {
-  background: #2c2b2a;
+  background: #FAFAFA;
   font-family: "Poppins", sans-serif;
-  color: #1f252b;
+  color: #ffffff;
   font-weight: 500;
 }
 
 p {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  color: #1f252b;
-  line-height: 2;
-  font-weight: 500;
-  letter-spacing: 0.3px;
+  color: #5F5F5F;
+  line-height: 1.9;
+  font-weight: 300;
+  letter-spacing: 0.2px;
   margin-bottom: 20px;
 }
 
 /*CONTAINER*/
 .container {
   margin: 0 auto;
-  max-width: 90rem;
+  max-width: 93.75rem;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -132,6 +132,35 @@ p {
   HEADER
   ========================================
 */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 55px 0;
+}
+header .container .navigation nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .navigation nav ul li a {
+  display: block;
+  font-size: 1.25rem;
+  color: #03325B;
+  padding: 10px 25px;
+  transition: 0.3s all;
+}
+header .container .navigation nav ul li a:hover {
+  text-shadow: 1px 3px 2px #c3e309;
+}
+
 /*
   ========================================
   FOOTER
@@ -142,6 +171,111 @@ p {
   CONTENT INDEX
   ========================================
 */
+.contentEmphasis .container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0 70px;
+  margin-top: 50px;
+}
+.contentEmphasis .container .__left {
+  width: 480px;
+}
+.contentEmphasis .container .__left h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #A1BD04;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 25px;
+}
+.contentEmphasis .container .__left h1::after {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 18px;
+  height: 109px;
+  width: 6px;
+  border-radius: 15px;
+  background: #A1BD04;
+}
+.contentEmphasis .container .__left .__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 35px 65px;
+  margin-top: 50px;
+  padding-bottom: 80px;
+}
+.contentEmphasis .container .__left .__list div a {
+  width: 204px;
+  height: 240px;
+  background: #F0F5FD;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0 30px;
+  transition: 0.2s all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 0;
+}
+.contentEmphasis .container .__left .__list div a * {
+  transition: 0.2s all;
+}
+.contentEmphasis .container .__left .__list div a figure {
+  height: 78px;
+  display: flex;
+  align-items: center;
+}
+.contentEmphasis .container .__left .__list div a span {
+  display: block;
+  color: #03325B;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 25px;
+}
+.contentEmphasis .container .__left .__list div a:hover {
+  background: #A1BD04 0% 0% no-repeat padding-box;
+  box-shadow: 0px 15px 30px #A1BD04;
+}
+.contentEmphasis .container .__left .__list div a:hover img {
+  filter: grayscale(0) brightness(0%) contrast(100%) invert(100%) !important;
+}
+.contentEmphasis .container .__left .__list div a:hover span {
+  color: #ffffff;
+}
+.contentEmphasis .container .__right {
+  width: 530px;
+  padding-left: 55px;
+  padding-top: 75px;
+  position: relative;
+}
+.contentEmphasis .container .__right img {
+  position: relative;
+  z-index: 2;
+  filter: drop-shadow(0 -5px 36px rgba(11, 1, 171, 0.4));
+}
+.contentEmphasis .container .__right::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 12px;
+  background: url("../img/circle_green_small.png") center no-repeat;
+  height: 327px;
+  width: 327px;
+}
+.contentEmphasis .container .__right::after {
+  content: "";
+  position: absolute;
+  bottom: 150px;
+  right: -240px;
+  background: url("../img/circle_blue_big.png") center no-repeat;
+  height: 550px;
+  width: 550px;
+}
+
 /*
   ========================================
   SOLUCAO
@@ -215,7 +349,7 @@ p {
   margin: 20px 0 0 0;
   transition: all 0.3s ease;
   font-family: "Poppins", sans-serif;
-  background: #2c2b2a;
+  background: #5F5F5F;
   color: #fff;
   display: inline-block;
   padding: 1.125rem 1rem;
@@ -227,8 +361,8 @@ p {
   border-radius: 10px;
 }
 .inputs .btn input[type=submit]:hover {
-  border: 3px solid #2c2b2a;
-  background: #206ab2;
+  border: 3px solid #5F5F5F;
+  background: #03325B;
   color: #ffffff;
 }
 
@@ -260,7 +394,7 @@ p {
 }
 
 .dl-menuwrapper button {
-  background: #206ab2 url("../img/menu_icon.png") right 15px center no-repeat;
+  background: #A1BD04 url("../img/menu_icon.png") right 15px center no-repeat;
   border: none;
   width: 100%;
   height: 48px;
@@ -282,7 +416,7 @@ p {
 
 .dl-menuwrapper button.dl-active {
   color: #ffffff;
-  background: #3a9bfa url("../img/menu-close.png") right 15px center no-repeat;
+  background: #A1BD04 url("../img/menu-close.png") right 15px center no-repeat;
 }
 
 .dl-menuwrapper ul {
@@ -440,6 +574,29 @@ All this is done for any sub-level being entered.
 .demo-4 .dl-menuwrapper button.dl-active,
 .demo-4 .dl-menuwrapper ul {
   background: #79a002;
+}
+
+/*
+  ========================================
+  BUTTONS
+  ========================================
+*/
+.button.--type_1 a {
+  background: #A1BD04;
+  text-transform: uppercase;
+  border-radius: 30px;
+  padding: 10px 22px;
+  background: #A1BD04 0% 0% no-repeat padding-box;
+  box-shadow: 0px 15px 30px #A1BD04;
+  display: block;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 0.3s all;
+}
+.button.--type_1 a:hover {
+  background: #C3E309;
+  box-shadow: 0px 1px 8px #C3E309;
 }
 
 /**/

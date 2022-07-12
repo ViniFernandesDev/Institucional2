@@ -26,3 +26,34 @@
   HEADER
   ========================================
 */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  & .container {
+    @include main.FlexBetCen;
+    padding: 55px 0;
+
+    & .navigation {
+      & nav ul {
+        @include main.FlexBetCen;
+
+        & li a {
+          display: block;
+          font-size: reset.toRem(20);
+          color: main.$ColorOne;
+          padding: 10px 25px;
+          transition: 0.3s all;
+
+          &:hover {
+            text-shadow: 1px 3px 2px #c3e309;
+          }
+        }
+      }
+    }
+  }
+}
