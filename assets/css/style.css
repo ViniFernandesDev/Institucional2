@@ -166,6 +166,193 @@ header .container .navigation nav ul li a:hover {
   FOOTER
   ========================================
 */
+footer {
+  height: 498px;
+}
+footer .container {
+  height: 100%;
+}
+footer .container .display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+}
+footer .container .display .item1 {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .display .item1 .information {
+  width: 50%;
+}
+footer .container .display .item1 .information p {
+  font-size: 0.875rem;
+  margin-top: 40px;
+}
+footer .container .display .item1 .information a {
+  font-size: 1.5625rem;
+  font-weight: bold;
+  color: #03325B;
+}
+footer .container .display .item1 .links nav ul li {
+  line-height: 2.2;
+  margin: 10px;
+  transition: all 0.3s;
+}
+footer .container .display .item1 .links nav ul li a {
+  color: #5F5F5F;
+  font-size: 1rem;
+  font-weight: 400;
+}
+footer .container .display .item1 .links nav ul li :hover {
+  color: #A1BD04;
+}
+footer .container .display .item2 {
+  width: 40%;
+  position: relative;
+}
+footer .container .display .item2 p {
+  font-weight: 400;
+  margin-left: 25px;
+}
+footer .container .display .item2 input {
+  height: 55px;
+  border-radius: 100px;
+  padding-left: 25px;
+  width: 100%;
+  border: solid 1px #03325B;
+  outline-color: #A1BD04;
+}
+footer .container .display .item2 .button {
+  width: 135px;
+  position: absolute;
+  top: 55px;
+  right: 7px;
+}
+footer .container .display .item2 .button.--type_1 input {
+  background: #A1BD04;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 30px;
+  padding: 0;
+  height: 45px;
+  background: #A1BD04 0% 0% no-repeat padding-box;
+  box-shadow: 0px 15px 30px #A1BD04;
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #ffffff;
+  transition: 0.3s all;
+  border: none;
+  cursor: pointer;
+}
+footer .container .display .item2 .button.--type_1 input:hover {
+  background: #C3E309;
+  box-shadow: 0px 1px 8px #C3E309;
+}
+footer .container .display .item2 ::placeholder {
+  font-size: 1rem;
+}
+footer .container .display .item2 h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #03325B;
+  line-height: 1.5;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-left: 15px;
+}
+footer .container .display .item2 ul {
+  display: flex;
+  gap: 25px;
+  padding-left: 15px;
+}
+footer .container .display .item2 ul li img:hover {
+  filter: #A1BD04;
+}
+footer .container .direitos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .container .direitos p {
+  font-size: 0.875rem;
+}
+
+/* DESKTOP - 1200px*/
+@media (max-width: 75rem) {
+  footer .container .display .item1 {
+    width: 45%;
+  }
+  footer .container .display .item1 .information a {
+    font-size: 1.25rem;
+  }
+  footer .container .display .item1 .links nav ul li {
+    line-height: 1.5;
+  }
+  footer .container .display .item2 {
+    width: 45%;
+  }
+}
+/* LAPTOP - 1024px*/
+@media (max-width: 64rem) {
+  footer .container .display {
+    margin-top: -60px;
+    flex-wrap: wrap;
+  }
+  footer .container .display .item1 {
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  footer .container .display .item1 .information {
+    text-align: center;
+    width: 100%;
+  }
+  footer .container .display .item1 .information .logo {
+    display: none;
+  }
+  footer .container .display .item1 .information a {
+    font-size: 1.25rem;
+  }
+  footer .container .display .item1 .links {
+    display: none;
+  }
+  footer .container .display .item2 {
+    width: 100%;
+    margin-top: -70px;
+  }
+  footer .container .display .item2 p {
+    margin-top: 0;
+    text-align: center;
+  }
+  footer .container .display .item2 input {
+    width: 90%;
+    margin-left: 5%;
+  }
+  footer .container .display .item2 .button {
+    top: 56px;
+    right: 5%;
+  }
+  footer .container .display .item2 .button input {
+    font-size: 0.75rem !important;
+  }
+  footer .container .display .item2 h2 {
+    text-align: center;
+  }
+  footer .container .display .item2 ul {
+    justify-content: center;
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  footer .container .direitos {
+    flex-wrap: wrap;
+  }
+}
 /*
   ========================================
   CONTENT INDEX
@@ -372,7 +559,6 @@ header .container .navigation nav ul li a:hover {
     width: 100% !important;
     margin-bottom: 20px;
   }
-
   .inputs select,
 .inputs input[type=text],
 .inputs textarea {
@@ -599,7 +785,6 @@ All this is done for any sub-level being entered.
   box-shadow: 0px 1px 8px #C3E309;
 }
 
-/**/
-/**/
+/**/ /**/
 
 /*# sourceMappingURL=style.css.map */
