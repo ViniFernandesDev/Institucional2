@@ -73,4 +73,62 @@
      </div><!--container-->
 </section><!--contentEmphasis-->
 
+<section class="findPlan">
+     <div class="container">
+
+          <div class="__titleType1">
+               <h2>ENCONTRE O PLANO CERTO</h2>
+               <h3>Planos e Valores</h3>
+               <p>Planos com valores a partir de R$ 100,00 por licença. Invista em inovação, agilidade e praticidade.</p>
+               <p><span>Adquira agora mesmo a solução LR Seg</span></p>
+          </div><!--__titleType1-->
+
+          <div class="__display">
+               <div class="item">
+                    <span class="type1">Plano Base</span>
+                    <span class="type2">R$ 100/m</span>
+                    <span class="type3">Para micro e pequenos empreendedores que desejam agilidade.</span>
+                    <span class="type4">1 a 2 usuários</span>
+                    <span class="type5">Acesso total ao sistema</span>
+                    <span class="type3">Suporte via e-mail/Skype e WhatsApp</span>
+
+                    <div class="button --type_1">
+                         <a href="#">CONTRATE JÁ</a>
+                    </div><!--button-->
+               </div>
+
+               <div class="item --emphasis">
+                    <span class="type6">Plano mais adquirido</span>
+                    <span class="type1">Plano Comercial</span>
+                    <span class="type2">R$ 150/m</span>
+                    <span class="type3">Para empresas em com foco em crescimento colaborativo</span>
+                    <span class="type4">3 a 5 usuários</span>
+                    <span class="type5">Acesso total ao sistema</span>
+                    <span class="type3 --gray">Suporte via e-mail/Skype e WhatsApp</span>
+
+                    <div class="button --type_1">
+                         <a href="#">CONTRATE JÁ</a>
+                    </div><!--button-->
+               </div><!----emphasis-->
+
+               <div class="item">
+                    <span class="type1">Plano Profissional</span>
+                    <span class="type2">R$ 200/m</span>
+                    <span class="type3">Para empresas que precisem expandir a forma de colaborar e monitorar o relatórios</span>
+                    <span class="type4">6 a 10 usuários</span>
+                    <span class="type5">Acesso total ao sistema</span>
+                    <span class="type3">Suporte via e-mail/Skype e WhatsApp</span>
+
+                    <div class="button --type_1">
+                         <a href="#">CONTRATE JÁ</a>
+                    </div><!--button-->
+               </div>
+          </div><!--display-->
+
+          <p>Todos os planos possuem Taxa de Adesão de R$ 500,00<br>
+           Acima de 10 usuários, adicional de R$20,00 cada usuário</p>
+
+     </div><!--container-->
+</section><!--findPlan-->
+
 <?php include('footer.php'); ?>

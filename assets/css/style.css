@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 /*RESET*/
 *, *:before, *:after {
   box-sizing: border-box;
@@ -171,6 +171,9 @@ header .container .navigation nav ul li a:hover {
   CONTENT INDEX
   ========================================
 */
+.contentEmphasis {
+  margin-bottom: 100px;
+}
 .contentEmphasis .container {
   display: flex;
   justify-content: center;
@@ -597,6 +600,130 @@ All this is done for any sub-level being entered.
 .button.--type_1 a:hover {
   background: #C3E309;
   box-shadow: 0px 1px 8px #C3E309;
+}
+
+/*
+  ========================================
+  FIND PLAN
+  ========================================
+*/
+.findPlan {
+  text-align: center;
+  padding-bottom: 50px;
+}
+.findPlan .__titleType1 {
+  text-align: center;
+}
+.findPlan .__titleType1 h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #A1BD04;
+  margin-bottom: 10px;
+  letter-spacing: 1.6px;
+}
+.findPlan .__titleType1 h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #03325B;
+  margin-bottom: 10px;
+}
+.findPlan .__titleType1 p {
+  margin: 0;
+}
+.findPlan .__titleType1 p span {
+  color: #A1BD04;
+}
+.findPlan .__display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px 32px;
+  flex-wrap: wrap;
+  margin-top: 45px;
+  /*EMPHASIS*/
+}
+.findPlan .__display .item {
+  width: 370px;
+  border: 1px solid #D1DBE3;
+  border-radius: 20px;
+  padding: 45px 25px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.findPlan .__display .item span {
+  display: block;
+}
+.findPlan .__display .item .type1 {
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: #5F5F5F;
+  margin-bottom: 8px;
+}
+.findPlan .__display .item .type2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #03325B;
+  margin-bottom: 22px;
+}
+.findPlan .__display .item .type3 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: #5F5F5F;
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+.findPlan .__display .item .type4 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #A1BD04;
+  margin: 30px 0 40px 0;
+}
+.findPlan .__display .item .type5 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #A1BD04;
+  margin-bottom: 5px;
+}
+.findPlan .__display .item .type6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #A1BD04;
+}
+.findPlan .__display .item a {
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 14px;
+}
+.findPlan .__display .--emphasis {
+  padding: 50px 25px;
+  background: #A1BD04 0% 0% no-repeat padding-box;
+  box-shadow: 0px 15px 30px #A1BD04;
+  border: 1px solid #A1BD04;
+}
+.findPlan .__display .--emphasis .type2 {
+  margin-bottom: 10px;
+}
+.findPlan .__display .--emphasis .type3 {
+  color: #ffffff;
+}
+.findPlan .__display .--emphasis .type3.--gray {
+  color: #5F5F5F;
+}
+.findPlan .__display .--emphasis .type4 {
+  color: #ffffff;
+  margin: 25px 0 50px 0;
+}
+.findPlan .__display .--emphasis .type5 {
+  color: #ffffff;
+}
+.findPlan .__display .--emphasis .type6 {
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+.findPlan .__display .--emphasis a {
+  margin-top: 40px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
 }
 
 /**/

@@ -1,0 +1,166 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+
+/*
+  ========================================
+  FIND PLAN
+  ========================================
+*/
+
+.findPlan {
+	text-align: center;
+	padding-bottom: 50px;
+
+	& .__titleType1 {
+		text-align: center;
+
+		& h2 {
+			font-size: reset.toRem(16);
+			font-weight: 600;
+			color: main.$ColorMain;
+			margin-bottom: 10px;
+			letter-spacing: 1.6px;
+		}
+
+		& h3 {
+			font-size: reset.toRem(40);
+			font-weight: 700;
+			color: main.$ColorOne;
+			margin-bottom: 10px;
+		}
+
+		& p {
+			margin: 0;
+
+			& span {
+				color: main.$ColorMain;
+			}
+		}
+	}
+
+	& .__titleType2 {
+		& h2 {
+
+		}
+
+		& p {
+			& span {
+
+			}
+		}
+	}
+
+	// ITEMS
+
+	& .__display {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 25px 32px;
+		flex-wrap: wrap;
+		margin-top: 45px;
+
+		& .item {
+			width: 370px;
+			border: 1px solid #D1DBE3;
+			border-radius: 20px;
+			padding: 45px 25px;
+			text-align: center;
+			margin-bottom: 35px;
+
+			& span {
+				display: block;
+			}
+
+			& .type1 {
+				font-size: reset.toRem(15);
+				font-weight: 500;
+				color: main.$ColorTwo;
+				margin-bottom: 8px;
+			}
+
+			& .type2 {
+				font-size: reset.toRem(40);
+				font-weight: 700;
+				color: main.$ColorOne;
+				margin-bottom: 22px;
+			}
+
+			& .type3 {
+				font-size: reset.toRem(16);
+				font-weight: 300;
+				color: main.$ColorTwo;
+				margin-bottom: 8px;
+				line-height: 1.8;
+			}
+
+			& .type4 {
+				font-size: reset.toRem(25);
+				font-weight: 700;
+				color: main.$ColorMain;
+				margin: 30px 0 40px 0;
+			}
+
+			& .type5 {
+				font-size: reset.toRem(18);
+				font-weight: 600;
+				color: main.$ColorMain;
+				margin-bottom: 5px;
+			}
+
+			& .type6 {
+				font-size: reset.toRem(16);
+				font-weight: 600;
+				color: main.$ColorMain;
+			}
+
+			& a {
+				display: inline-block;
+				margin-top: 20px;
+				border-radius: 14px;
+			}
+		}
+
+		/*EMPHASIS*/
+
+		& .--emphasis {
+			padding: 50px 25px;
+			background: main.$ColorMain 0% 0% no-repeat padding-box;
+			box-shadow: 0px 15px 30px main.$ColorMain;
+			border: 1px solid main.$ColorMain;
+
+			& .type2 {
+				margin-bottom: 10px;
+			}
+
+			& .type3 {
+				color: main.$ColorThree;
+
+				&.--gray {
+					color: main.$ColorTwo;
+				}
+			}
+
+			& .type4 {
+				color: main.$ColorThree;
+				margin: 25px 0 50px 0;
+			}
+
+			& .type5 {
+				color: main.$ColorThree;
+			}
+
+			& .type6 {
+				color: main.$ColorThree;
+				margin-bottom: 35px;
+			}
+
+			& a {
+				margin-top: 40px;
+				border: 2px solid #ffffff;
+				color: main.$ColorThree;
+			}
+		}
+	}
+}
+
