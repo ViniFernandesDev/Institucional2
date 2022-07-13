@@ -3,15 +3,55 @@
 
 /*
   ========================================
-  FIND PLAN
+  CALL TEST
   ========================================
 */
+
+.call_test {
+    text-align: center;
+    padding: 55px 0 90px 0;
+
+    & h2 {
+        font-size: reset.toRem(16);
+        font-weight: 600;
+        color: main.$ColorMain;
+        margin-bottom: 12px;
+        letter-spacing: 1px;
+    }
+
+    & h3 {
+        font-size: reset.toRem(40);
+        font-weight: 700;
+        color: main.$ColorOne;
+        margin-bottom: 10px;
+    }
+
+    & p {
+        margin: 0;
+        text-align: center;
+
+        &::after {
+            content: "";
+            width: 180px;
+            height: 4px;
+            background: #A1BD04;
+            display: block;
+            border-radius: 10px;
+            margin: 12px auto;       
+        }
+    }
+
+    & .button {
+        display: inline-block;
+        margin-top: 45px;
+    }
+}
 
 .findPlan {
 	text-align: center;
 	padding-bottom: 50px;
 
-	& .__title.--type1 {
+	& .__titleType1 {
 		text-align: center;
 
 		& h2 {
@@ -38,22 +78,14 @@
 		}
 	}
 
-	& .__title.--type2 {
-		text-align: center;
-
+	& .__titleType2 {
 		& h2 {
-			font-size: reset.toRem(40);
-			font-weight: 500;
-			color: main.$ColorMain;
-			margin-bottom: 10px;
-			letter-spacing: 1.6px;
+
 		}
 
 		& p {
-			margin: 0;
-
 			& span {
-				color: main.$ColorMain;
+
 			}
 		}
 	}

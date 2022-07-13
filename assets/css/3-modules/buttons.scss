@@ -8,15 +8,13 @@
 */
 
 .button {
-	&.--type_1 a {
+	& a {
 		background: main.$ColorMain;
 		text-transform: uppercase;
-		border-radius: 30px;
-		padding: 10px 22px;
+		border-radius: 35px;
 		background: main.$ColorMain 0% 0% no-repeat padding-box;
 		box-shadow: 0px 15px 30px main.$ColorMain;
 		display: block;
-		font-size: reset.toRem(16);
 		font-weight: 600;
 		color: main.$ColorThree;
 		transition: 0.3s all;
@@ -25,5 +23,15 @@
 			background: main.$ColorMain2;
 			box-shadow: 0px 1px 8px main.$ColorMain2;
 		}
+	}
+
+	&.--type_1 a {
+		padding: 10px 22px;
+		font-size: reset.toRem(16);
+	}
+
+	&.--type_2 a {
+		padding: 22px 26px;
+		font-size: reset.toRem(25);
 	}
 }

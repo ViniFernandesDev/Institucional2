@@ -77,12 +77,12 @@
 <section class="findPlan">
      <div class="container">
 
-          <div class="__titleType1">
+          <div class="__title --type1">
                <h2>ENCONTRE O PLANO CERTO</h2>
                <h3>Planos e Valores</h3>
                <p>Planos com valores a partir de R$ 100,00 por licença. Invista em inovação, agilidade e praticidade.</p>
                <p><span>Adquira agora mesmo a solução LR Seg</span></p>
-          </div><!--__titleType1-->
+          </div><!--__title --type1-->
 
           <div class="__display">
                <div class="item">
@@ -131,6 +131,16 @@
 
      </div><!--container-->
 </section><!--findPlan-->
+
+<section class="call_test">
+     <div class="container">
+
+          <h2>EM TODOS OS PLANOS</h2>
+          <h3>Faça seu teste gratuito por 5 dias</h3>
+          <p>Conheça a solução LR Seg e todos os benefícios que ela pode oferecer.</p>
+
+     </div><!--container-->
+</section><!--call_test-->
 
 <section class="versatility">
      <div class="container">

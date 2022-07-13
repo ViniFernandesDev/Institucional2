@@ -3,6 +3,44 @@
 
 /*
   ========================================
-  PRODUTOS SERVICOS
+  PLANS VALUES
   ========================================
 */
+
+.plans_values {
+  & .__textOne {
+    text-align: center;
+    margin-bottom: 130px;
+
+    & h2 {
+			font-size: reset.toRem(40);
+			font-weight: 600;
+			color: main.$ColorOne;
+			margin-bottom: 40px;
+			letter-spacing: 1.6px;
+		}
+
+		& h3 {
+			font-size: reset.toRem(25);
+			font-weight: 300;
+			color: main.$ColorOne;
+			margin-bottom: 40px;
+		}
+
+		& p {
+			margin-bottom:30px;
+		}
+  }
+
+
+  & .incluse {
+    text-align: center;
+
+		& h4 {
+			font-size: reset.toRem(25);
+			font-weight: 300;
+			color: main.$ColorOne;
+			margin-bottom: 20px;
+		}
+  }
+}
