@@ -6,3 +6,256 @@
   FOOTER
   ========================================
 */
+
+footer {
+  height: 498px;
+
+  & .container {
+    height: 100%;
+
+    & .display {
+      @include main.FlexBetCen;
+      height: 90%;
+
+      & .item1 {
+        width: 40%;
+        @include main.FlexBetCen;
+
+        & .information {
+          width: 50%;
+
+          & p {
+            font-size: reset.toRem(14);
+            margin-top: 40px;
+          }
+
+          & a {
+            font-size: reset.toRem(25);
+            font-weight: bold;
+            color: main.$ColorOne;
+          }
+        }
+
+        & .links {
+          & nav {
+            & ul {
+              & li {
+                line-height: 2.2;
+                margin: 10px;
+                transition: all 0.3s;
+
+                & a {
+                  color: main.$ColorTwo;
+                  font-size: reset.toRem(16);
+                  font-weight: 400;
+                }
+
+                & :hover {
+                  color: main.$ColorMain;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      & .item2 {
+        width: 40%;
+        position: relative;
+
+        & p {
+          font-weight: 400;
+          margin-left: 25px;
+        }
+
+        & input {
+          height: 55px;
+          border-radius: 100px;
+          padding-left: 25px;
+          width: 100%;
+          border: solid 1px main.$ColorOne;
+          outline-color: main.$ColorMain;
+
+        }
+
+        & .button {
+          width: 135px;
+          position: absolute;
+          top: 55px;
+          right: 7px;
+
+          &.--type_1 input {
+            background: main.$ColorMain;
+            text-transform: uppercase;
+            text-align: center;
+            border-radius: 30px;
+            padding: 0;
+            height: 45px;
+            background: main.$ColorMain 0% 0% no-repeat padding-box;
+            box-shadow: 0px 15px 30px main.$ColorMain;
+            display: block;
+            font-size: reset.toRem(12);
+            font-weight: 600;
+            color: main.$ColorThree;
+            transition: 0.3s all;
+            border: none;
+            cursor: pointer;
+
+            &:hover {
+              background: main.$ColorMain2;
+              box-shadow: 0px 1px 8px main.$ColorMain2;
+            }
+          }
+        }
+
+        & ::placeholder {
+          font-size: reset.toRem(16);
+        }
+
+        & h2 {
+          font-size: reset.toRem(20);
+          font-weight: bold;
+          color: main.$ColorOne;
+          line-height: 1.5;
+          position: relative;
+          margin-bottom: 10px;
+          margin-top: 30px;
+          margin-left: 15px;
+        }
+
+        & ul {
+          display: flex;
+          gap: 25px;
+          padding-left: 15px;
+
+          & li {
+            & img {
+              &:hover {
+                filter: main.$ColorMain;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    & .direitos {
+      @include main.FlexCenCen;
+      gap: 10px;
+
+
+      & p {
+        font-size: reset.toRem(14);
+      }
+    }
+  }
+}
+
+/* DESKTOP - 1200px*/
+@include main.breakpoint(smashDesktop) {
+  footer {
+    & .container {
+      & .display {
+        & .item1 {
+          width: 45%;
+
+          & .information {
+            & a {
+              font-size: reset.toRem(20);
+            }
+          }
+
+          & .links {
+            & nav {
+              & ul {
+                & li {
+                  line-height: 1.5;
+                }
+              }
+            }
+          }
+        }
+
+        & .item2 {
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+/* LAPTOP - 1024px*/
+@include main.breakpoint(smashLaptop) {
+  footer {
+
+
+    & .container {
+      & .display {
+        margin-top: -60px;
+        flex-wrap: wrap;
+
+        & .item1 {
+          width: 100%;
+
+          justify-content: space-around;
+          flex-wrap: wrap;
+
+          & .information {
+            text-align: center;
+            width: 100%;
+
+            & .logo {
+              display: none;
+            }
+
+            & a {
+              font-size: reset.toRem(20);
+            }
+          }
+
+          & .links {
+            display: none;
+          }
+        }
+
+        & .item2 {
+          width: 100%;
+          margin-top: -70px;
+
+          & p {
+            margin-top: 0;
+            text-align: center;
+          }
+
+          & input {
+            width: 90%;
+            margin-left: 5%;
+          }
+
+          & .button {
+            top: 56px;
+            right: 5%;
+
+            & input {
+              font-size: reset.toRem(12) !important;
+            }
+          }
+
+          & h2 {
+            text-align: center;
+          }
+
+          & ul {
+            justify-content: center;
+            padding-left: 0;
+            margin-bottom: 20px
+          }
+        }
+      }
+
+      & .direitos {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
