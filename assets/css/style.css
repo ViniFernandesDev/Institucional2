@@ -369,6 +369,20 @@ footer .container .direitos p {
     flex-wrap: wrap;
   }
 }
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #03325B;
+  border-radius: 10px;
+}
+
 /*
   ========================================
   CONTENT INDEX
@@ -849,7 +863,7 @@ All this is done for any sub-level being entered.
 .findPlan .__display .item {
   width: 370px;
   border: 1px solid #D1DBE3;
-  border-radius: 20px;
+  border-radius: 15px;
   padding: 45px 25px;
   text-align: center;
   margin-bottom: 35px;
@@ -954,6 +968,92 @@ All this is done for any sub-level being entered.
   background: #A1BD04;
   display: block;
   margin-top: 10px;
+}
+
+/*
+  ========================================
+  VERSATILITY
+  ========================================
+*/
+.versatility {
+  background: #F0F5FD;
+  text-align: center;
+  padding: 55px 0;
+}
+.versatility h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #03325B;
+  margin-bottom: 10px;
+}
+.versatility p {
+  margin-bottom: 60px;
+}
+.versatility .devices {
+  display: flex;
+  justify-content: center;
+  gap: 25px 30px;
+  position: relative;
+}
+.versatility .devices::after {
+  content: "";
+  position: absolute;
+  top: -40px;
+  height: 220px;
+  width: 390px;
+  background: url("../img/balls.png") repeat;
+}
+.versatility .devices div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 0 0 0;
+  text-align: center;
+  background: #03325B;
+  border-radius: 15px;
+  width: 530px;
+  height: 370px;
+  box-shadow: 18px 30px 45px rgba(3, 50, 91, 0.5);
+  position: relative;
+  z-index: 2;
+}
+.versatility .devices div h3 {
+  font-size: 1.5625rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+.versatility .demonstration {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 80px;
+}
+.versatility .demonstration .txt {
+  text-align: left;
+}
+.versatility .demonstration .txt h4 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #A1BD04;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.versatility .demonstration .txt div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0 25px;
+}
+.versatility .demonstration .txt div p {
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #03325B;
+  line-height: 1.4;
 }
 
 /**/

@@ -131,6 +131,49 @@
 
      </div><!--container-->
 </section><!--findPlan-->
+
+<section class="versatility">
+     <div class="container">
+
+          <h2>Versatilidade gerando agilidade</h2>
+
+          <p>Para você ter tudo que precisa em qualquer lugar ou hora.</p>
+
+          <div class="devices">
+               <div>
+                   <h3>Uso no celular</h3>
+
+                   <img src="assets/img/device1.jpg" alt="Celular">
+               </div>
+
+               <div>
+                   <h3>Uso no tablet</h3>
+
+                   <img src="assets/img/device2.jpg" alt="Tablet">
+               </div>
+          </div><!--devices-->
+
+          <div class="demonstration">
+               <div class="img">
+                    <img src="assets/img/woman_demonstration.jpg" alt="woman_demonstration">
+               </div><!--img-->
+
+               <div class="txt">
+                    <h4>QUEREMOS AJUDAR A MELHORAR<br>
+                     O SEU PROCESSO DE ATENDIMENTO.</h4>
+
+                     <div>
+                         <p>Converse com um de nossos especialistas<br> e solicite uma demonstração.</p>
+
+                         <span class="button --type_1">
+                              <a href="">SOLICITE UMA DEMONSTRAÇÃO</a>
+                         </span><!--button-->
+                     </div>
+               </div><!--txt-->
+          </div><!--demonstration-->
+
+     </div><!--container-->
+</section><!--versatility-->
 </main>
 
 <?php include('footer.php'); ?>

@@ -1,0 +1,96 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+
+/*
+  ========================================
+  VERSATILITY
+  ========================================
+*/
+
+.versatility {
+    background: main.$ColorFour;
+    text-align: center;
+    padding: 55px 0;
+
+    & h2 {
+        font-size: reset.toRem(40);
+        font-weight: 700;
+        color: main.$ColorOne;
+        margin-bottom: 10px;
+    }
+
+    & p {
+        margin-bottom: 60px;
+    }
+
+    & .devices {
+      display: flex;
+      justify-content: center;
+      gap: 25px 30px;
+      position: relative;
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: -40px;
+        height: 220px;
+        width: 390px;
+        background: url("../img/balls.png") repeat;
+      }
+
+      & div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 45px 0 0 0;
+        text-align: center;
+        background: main.$ColorOne;
+        border-radius: 15px;
+        width: 530px;
+        height: 370px;
+        box-shadow: 18px 30px 45px rgb(3 50 91 / 50%);
+        position: relative;
+        z-index: 2;
+
+        & h3 {
+          font-size: reset.toRem(25);
+          font-weight: 600;
+          color: main.$ColorThree;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    & .demonstration {
+      margin-top: 80px;
+      @include main.FlexCenCen;
+      gap: 0 80px;
+
+      & .txt {
+        text-align: left;
+
+        & h4 {
+          font-size: reset.toRem(40);
+          font-weight: 500;
+          color: main.$ColorMain;
+          line-height: 1.5;
+          margin-bottom: 15px;
+          letter-spacing: 1px;
+        }
+
+        & div {
+          @include main.FlexBetCen;
+          gap: 0 25px;
+
+          & p {
+            margin-bottom: 0;
+            font-size: reset.toRem(20);
+            font-weight: 300;
+            color: main.$ColorOne;
+            line-height: 1.4;
+          }
+        }
+      }
+    }
+}
