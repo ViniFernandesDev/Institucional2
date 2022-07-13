@@ -9,6 +9,15 @@
 
 <?php include('header.php'); ?>
 
-CONTENT
+<main class="internal">
+     <div class="container">
+
+          <section class="__titleMain">
+               <h1>PLANOS E VALORES</h1>
+          </section><!--__titleMain-->
+
+     </div><!--container-->
+</main><!--internal-->
+
 
 <?php include('footer.php'); ?>

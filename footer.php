@@ -44,7 +44,6 @@
                     <li><a href="#"><img src="assets/img/social/iconInsta.png" alt="Instagram"></a></li>
                     <li><a href="#"><img src="assets/img/social/iconInsta.png" alt="Facebook"></a></li><!-- ALTERAR ICON -->
                     <li><a href="#"><img src="assets/img/social/iconLinkedin.png" alt="Linkedin"></a></li>
-                    <li><a href="#"><img src="assets/img/social/iconTwiter.png" alt="Twiter"></a></li>
                 </ul>
             </div><!-- item2 -->
 
@@ -59,3 +58,4 @@
 
 <script type="text/javascript" src="assets/js/modernizr.js"></script>
 <script type="text/javascript" src="assets/js/jquery.js"></script>
+<script type="text/javascript" src="assets/js/functions.js"></script>

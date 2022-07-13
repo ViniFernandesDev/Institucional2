@@ -138,12 +138,21 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
+  transition: 0.3s all;
+}
+header.fixed {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: -1px -15px 38px #2a2c42;
+}
+header.fixed .container {
+  padding: 15px 0;
 }
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 55px 0;
+  transition: 0.3s all;
 }
 header .container .navigation nav ul {
   display: flex;
@@ -171,6 +180,7 @@ footer {
 }
 footer .container {
   height: 100%;
+  max-width: 70rem;
 }
 footer .container .display {
   display: flex;
@@ -179,17 +189,19 @@ footer .container .display {
   height: 90%;
 }
 footer .container .display .item1 {
-  width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-items: flex-end;
+  gap: 25px 35px;
 }
 footer .container .display .item1 .information {
-  width: 50%;
+  width: 240px;
 }
 footer .container .display .item1 .information p {
   font-size: 0.875rem;
   margin-top: 40px;
+  opacity: 0.5;
 }
 footer .container .display .item1 .information a {
   font-size: 1.5625rem;
@@ -198,11 +210,12 @@ footer .container .display .item1 .information a {
 }
 footer .container .display .item1 .links nav ul li {
   line-height: 2.2;
-  margin: 10px;
+  margin: 6px;
   transition: all 0.3s;
 }
 footer .container .display .item1 .links nav ul li a {
   color: #5F5F5F;
+  opacity: 0.5;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -216,6 +229,7 @@ footer .container .display .item2 {
 footer .container .display .item2 p {
   font-weight: 400;
   margin-left: 25px;
+  opacity: 0.5;
 }
 footer .container .display .item2 input {
   height: 55px;
@@ -226,14 +240,13 @@ footer .container .display .item2 input {
   outline-color: #A1BD04;
 }
 footer .container .display .item2 .button {
-  width: 135px;
+  width: 110px;
   position: absolute;
   top: 55px;
   right: 7px;
 }
 footer .container .display .item2 .button.--type_1 input {
   background: #A1BD04;
-  text-transform: uppercase;
   text-align: center;
   border-radius: 30px;
   padding: 0;
@@ -247,6 +260,9 @@ footer .container .display .item2 .button.--type_1 input {
   transition: 0.3s all;
   border: none;
   cursor: pointer;
+  font-weight: 300;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2509803922);
+  letter-spacing: 0.5px;
 }
 footer .container .display .item2 .button.--type_1 input:hover {
   background: #C3E309;
@@ -498,17 +514,18 @@ footer .container .direitos p {
 }
 
 .inputs select,
-.inputs input[type=text],
+.inputs input,
 .inputs textarea {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   padding: 1.125rem 1rem;
-  font-size: 1rem;
+  font-size: 0.9375rem;
   border-radius: 35px;
-  background: #f3f3f3;
+  background: none;
   border: 2px solid #f3f3f3;
   outline: none;
-  color: #5b5a5a;
+  color: #9f9f9f;
+  font-weight: 300;
   font-family: "Poppins", sans-serif;
   transition: all 0.5s ease;
 }
@@ -911,6 +928,32 @@ All this is done for any sub-level being entered.
   margin-top: 40px;
   border: 2px solid #ffffff;
   color: #ffffff;
+}
+
+/*
+  ========================================
+  TITLE INTERNAL
+  ========================================
+*/
+.internal {
+  margin-top: 240px;
+}
+.internal .container {
+  padding: 0 80px;
+}
+.internal .__titleMain h1 {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #A1BD04;
+  letter-spacing: 1px;
+}
+.internal .__titleMain h1::after {
+  content: "";
+  width: 137px;
+  height: 4px;
+  background: #A1BD04;
+  display: block;
+  margin-top: 10px;
 }
 
 /**/

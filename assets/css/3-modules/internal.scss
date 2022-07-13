@@ -1,0 +1,35 @@
+@use '../1-base/main.scss';
+@use '../1-base/reset.scss';
+
+/*
+  ========================================
+  TITLE INTERNAL
+  ========================================
+*/
+
+.internal {
+    margin-top: 240px;
+    
+    & .container {
+        padding: 0 80px;
+    }
+    
+    & .__titleMain {
+        & h1 {
+            font-size: reset.toRem(14);
+            font-weight: 700;
+            color: main.$ColorMain;
+            letter-spacing: 1px;
+
+            &::after {
+                content: '';
+                width: 137px;
+                height: 4px;
+                background: main.$ColorMain;
+                display: block;
+                margin-top:10px;
+            }
+        }
+    }
+}
+

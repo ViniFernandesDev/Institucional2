@@ -13,6 +13,7 @@
      <img src="assets/img/banner.jpg" alt="Banner">
 </section><!-- banner -->
 
+<main>
 <section class="contentEmphasis">
      <div class="container">
 
@@ -130,5 +131,6 @@
 
      </div><!--container-->
 </section><!--findPlan-->
+</main>
 
 <?php include('footer.php'); ?>

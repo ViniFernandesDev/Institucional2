@@ -2,7 +2,7 @@
     <div class="container">
 
         <div class="logo">
-            <a href="#">
+            <a href="index.php">
                 <img src="assets/img/logo.png" alt="Logo">
             </a>
         </div><!--logo-->
@@ -10,10 +10,10 @@
         <div class="navigation">
             <nav>
                 <ul>
-                    <li><a href="index.php">Quem somos</a></li>
-                    <li><a href="index.php">Solução LR Seg</a></li>
-                    <li><a href="index.php">Planos e Valores</a></li>
-                    <li><a href="index.php">Fale Conosco </a></li>
+                    <li><a href="quem_somos.php">Quem somos</a></li>
+                    <li><a href="solucao.php">Solução LR Seg</a></li>
+                    <li><a href="planos_valores.php">Planos e Valores</a></li>
+                    <li><a href="fale_conosco.php">Fale Conosco </a></li>
                 </ul>
             </nav>
         </div><!--navigation-->

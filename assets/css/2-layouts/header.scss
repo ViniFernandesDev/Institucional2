@@ -33,10 +33,21 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
+  transition: 0.3s all;
+
+  &.fixed {
+    background: rgb(255 255 255 / 92%);
+    box-shadow: -1px -15px 38px #2a2c42;
+
+    & .container {
+      padding: 15px 0;
+    }
+  }
 
   & .container {
     @include main.FlexBetCen;
     padding: 55px 0;
+    transition: 0.3s all;
 
     & .navigation {
       & nav ul {
