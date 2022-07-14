@@ -6,3 +6,133 @@
   FALE CONOSCO
   ========================================
 */
+
+.faleConosco {
+  & .__subTitle {
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    & h2 {
+      color: main.$ColorOne;
+      font-weight: bold;
+      font-size: reset.toRem(40);
+    }
+
+
+  }
+
+  & .formulario {
+
+    & .container {
+      position: relative;
+      left: -52px;
+
+      & .__display {
+        display: flex;
+        gap: 0 62px;
+        align-items: flex-start;
+
+
+        & .__form {
+          width: 55%;
+          padding: 63px 70px 0 61px;
+          background-color: #fff;
+          border-radius: 20px;
+          position: relative;
+
+          & label {
+            color: main.$ColorOne;
+          }
+
+          & textarea {
+            margin-top: 10px;
+            margin-bottom: 130px;
+            border-radius: 35px;
+          }
+
+          & input {
+            margin-bottom: 40px;
+            margin-top: 10px;
+          }
+
+          & .btn {
+            width: 106px;
+            position: absolute;
+            right: 70px;
+            bottom: 15px;
+          }
+        }
+
+        & .__information {
+          width: 39%;
+
+          & .__item {
+            padding: 63px 70px 63px 61px;
+            background-color: #fff;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            @include main.FlexBetCen;
+
+            &:first-child {
+              margin-bottom: 65px;
+            }
+
+            &:nth-child(3) p span {
+              display: block;
+              margin-bottom: 45px;
+            }
+
+            & .txt {
+              width: 75%;
+
+              & p {
+                margin: 0;
+                line-height: 35px;
+
+                & a {
+                  color: main.$ColorOne;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          & .__social {
+            @include main.FlexCenCen;
+            flex-direction: column;
+
+            & span {
+              font-size: reset.toRem(18);
+              color: main.$ColorOne;
+              display: block;
+              text-align: center;
+              margin-bottom: 30px;
+              font-weight: 600;
+            }
+
+            & ul {
+              display: flex;
+              gap: 25px;
+              padding-left: 15px;
+
+              & li {
+                & img {
+                  &:hover {
+                    filter: main.$ColorMain;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  & .maps iframe {
+    box-shadow: 0px 10px 25px #00000029;
+  }
+
+
+}

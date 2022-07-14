@@ -630,6 +630,105 @@ footer .container .direitos p {
   FALE CONOSCO
   ========================================
 */
+.faleConosco .__subTitle {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.faleConosco .__subTitle h2 {
+  color: #03325B;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.faleConosco .formulario .container {
+  position: relative;
+  left: -52px;
+}
+.faleConosco .formulario .container .__display {
+  display: flex;
+  gap: 0 62px;
+  align-items: flex-start;
+}
+.faleConosco .formulario .container .__display .__form {
+  width: 55%;
+  padding: 63px 70px 0 61px;
+  background-color: #fff;
+  border-radius: 20px;
+  position: relative;
+}
+.faleConosco .formulario .container .__display .__form label {
+  color: #03325B;
+}
+.faleConosco .formulario .container .__display .__form textarea {
+  margin-top: 10px;
+  margin-bottom: 130px;
+  border-radius: 35px;
+}
+.faleConosco .formulario .container .__display .__form input {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.faleConosco .formulario .container .__display .__form .btn {
+  width: 106px;
+  position: absolute;
+  right: 70px;
+  bottom: 15px;
+}
+.faleConosco .formulario .container .__display .__information {
+  width: 39%;
+}
+.faleConosco .formulario .container .__display .__information .__item {
+  padding: 63px 70px 63px 61px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faleConosco .formulario .container .__display .__information .__item:first-child {
+  margin-bottom: 65px;
+}
+.faleConosco .formulario .container .__display .__information .__item:nth-child(3) p span {
+  display: block;
+  margin-bottom: 45px;
+}
+.faleConosco .formulario .container .__display .__information .__item .txt {
+  width: 75%;
+}
+.faleConosco .formulario .container .__display .__information .__item .txt p {
+  margin: 0;
+  line-height: 35px;
+}
+.faleConosco .formulario .container .__display .__information .__item .txt p a {
+  color: #03325B;
+  font-weight: 600;
+}
+.faleConosco .formulario .container .__display .__information .__social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.faleConosco .formulario .container .__display .__information .__social span {
+  font-size: 1.125rem;
+  color: #03325B;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.faleConosco .formulario .container .__display .__information .__social ul {
+  display: flex;
+  gap: 25px;
+  padding-left: 15px;
+}
+.faleConosco .formulario .container .__display .__information .__social ul li img:hover {
+  filter: #A1BD04;
+}
+.faleConosco .maps iframe {
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1607843137);
+}
+
 /* BUTTONS */
 .inputs .inputs-content {
   display: flex;
@@ -647,11 +746,14 @@ footer .container .direitos p {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   padding: 1.125rem 1rem;
+  padding-left: 25px;
   font-size: 0.9375rem;
-  border-radius: 35px;
+  border-radius: 100px;
+  height: 55px;
+  width: 100%;
   background: none;
-  border: 2px solid #f3f3f3;
-  outline: none;
+  border: solid 1px #03325B;
+  outline-color: #A1BD04;
   color: #9f9f9f;
   font-weight: 300;
   font-family: "Poppins", sans-serif;
@@ -661,7 +763,7 @@ footer .container .direitos p {
 .inputs textarea:focus,
 .inputs select:focus,
 .inputs input:focus {
-  border: 2px solid #0a307d;
+  border: 2px solid #A1BD04;
 }
 
 .inputs select {
@@ -678,27 +780,23 @@ footer .container .direitos p {
 }
 
 .inputs .btn input[type=submit] {
+  text-align: center;
+  padding: 0;
+  height: 45px;
+  background: #A1BD04 0% 0% no-repeat padding-box;
+  box-shadow: 0px 15px 30px #A1BD04;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #ffffff;
   border: none;
-  outline: none;
+  padding-left: 0 !important;
   cursor: pointer;
-  margin: 20px 0 0 0;
-  transition: all 0.3s ease;
-  font-family: "Poppins", sans-serif;
-  background: #5F5F5F;
-  color: #fff;
-  display: inline-block;
-  padding: 1.125rem 1rem;
-  font-size: 1.125rem;
-  font-weight: 400;
-  margin-top: 20px;
-  min-width: 150px;
-  border: 3px solid transparent;
-  border-radius: 10px;
+  letter-spacing: 0.5px;
+  border-radius: 18px;
 }
 .inputs .btn input[type=submit]:hover {
-  border: 3px solid #5F5F5F;
-  background: #03325B;
-  color: #ffffff;
+  background: #C3E309;
+  box-shadow: 0px 1px 8px #C3E309;
 }
 
 /* TABLET - 600px*/
@@ -707,7 +805,6 @@ footer .container .direitos p {
     width: 100% !important;
     margin-bottom: 20px;
   }
-
   .inputs select,
 .inputs input[type=text],
 .inputs textarea {
@@ -1396,7 +1493,6 @@ All this is done for any sub-level being entered.
   color: #ffffff;
 }
 
-/**/
-/**/
+/**/ /**/
 
 /*# sourceMappingURL=style.css.map */
