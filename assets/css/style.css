@@ -481,25 +481,24 @@ footer .container .direitos p {
 .solution .__textMain p {
   margin-bottom: 30px;
 }
-
-.device_tabs {
+.solution .device_tabs {
   padding-bottom: 110px;
 }
-.device_tabs .container {
+.solution .device_tabs .container {
   display: flex;
   justify-content: center;
   gap: 0 45px;
 }
-.device_tabs .container .__item_solution.--hover div a {
+.solution .device_tabs .container .__item_solution.--hover div a {
   position: relative;
   background: none !important;
   box-shadow: none;
 }
-.device_tabs .container .__item_solution.--hover div a * {
+.solution .device_tabs .container .__item_solution.--hover div a * {
   position: relative;
   z-index: 2;
 }
-.device_tabs .container .__item_solution.--hover div a::after {
+.solution .device_tabs .container .__item_solution.--hover div a::after {
   content: "";
   position: absolute;
   width: 204px;
@@ -509,47 +508,46 @@ footer .container .direitos p {
   transition: 0.4s all;
   border-radius: 20px;
 }
-.device_tabs .container .__item_solution.--hover div a:hover::after {
+.solution .device_tabs .container .__item_solution.--hover div a:hover::after {
   width: 300px;
   background: #A1BD04 0% 0% no-repeat padding-box;
   box-shadow: 0px 15px 30px #A1BD04;
 }
-.device_tabs .container .__left {
+.solution .device_tabs .container .__left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 60px 0;
 }
-.device_tabs .container .__left.__item_solution.--hover div a {
+.solution .device_tabs .container .__left.__item_solution.--hover div a {
   position: relative;
 }
-.device_tabs .container .__left.__item_solution.--hover div a::after {
+.solution .device_tabs .container .__left.__item_solution.--hover div a::after {
   left: 0;
 }
-.device_tabs .container .__image {
+.solution .device_tabs .container .__image {
   width: 560px;
   position: relative;
   z-index: 2;
 }
-.device_tabs .container .__right {
+.solution .device_tabs .container .__right {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 60px 0;
 }
-.device_tabs .container .__right.__item_solution.--hover div a {
+.solution .device_tabs .container .__right.__item_solution.--hover div a {
   position: relative;
 }
-.device_tabs .container .__right.__item_solution.--hover div a::after {
+.solution .device_tabs .container .__right.__item_solution.--hover div a::after {
   right: 0;
 }
-
-.contentVideo {
+.solution .contentVideo {
   padding: 85px 0;
   text-align: center;
   background: #F0F5FD;
 }
-.contentVideo h2 {
+.solution .contentVideo h2 {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
@@ -557,18 +555,18 @@ footer .container .direitos p {
   margin-bottom: 90px;
   letter-spacing: 1.6px;
 }
-.contentVideo .__content {
+.solution .contentVideo .__content {
   margin: 0 auto;
   position: relative;
   width: 1100px;
   text-align: center;
 }
-.contentVideo .__content img {
+.solution .contentVideo .__content img {
   position: relative;
   z-index: 2;
   box-shadow: 10px 25px 25px rgba(0, 0, 0, 0.2);
 }
-.contentVideo .__content::before, .contentVideo .__content::after {
+.solution .contentVideo .__content::before, .solution .contentVideo .__content::after {
   content: "";
   width: 390px;
   height: 340px;
@@ -576,11 +574,11 @@ footer .container .direitos p {
   position: absolute;
   z-index: 1;
 }
-.contentVideo .__content::before {
+.solution .contentVideo .__content::before {
   left: -55px;
   top: -50px;
 }
-.contentVideo .__content::after {
+.solution .contentVideo .__content::after {
   right: -60px;
   bottom: -50px;
 }
@@ -623,6 +621,70 @@ footer .container .direitos p {
   font-weight: 300;
   color: #03325B;
   margin-bottom: 20px;
+}
+.plans_values .getItNow {
+  background: #F0F5FD;
+  margin-top: 80px;
+}
+.plans_values .getItNow .__display {
+  width: 815px;
+  margin: 0 auto;
+  position: relative;
+  top: 55px;
+}
+.plans_values .getItNow .__display .__txt {
+  width: 350px;
+  padding: 60px 0 0 0;
+  margin-left: 55px;
+}
+.plans_values .getItNow .__display .__txt h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #03325B;
+  margin-bottom: 30px;
+  letter-spacing: 1.6px;
+}
+.plans_values .getItNow .__display .__phone {
+  height: 110px;
+  width: 100%;
+  background: transparent linear-gradient(106deg, #A1BD04 0%, #C3E309 100%) 0% 0% no-repeat padding-box;
+  position: relative;
+  border-radius: 30px;
+}
+.plans_values .getItNow .__display .__phone div {
+  margin-left: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 0 0 70px;
+  background: url("../img/ico_phone.png") left center no-repeat;
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1.6px;
+}
+.plans_values .getItNow .__display .__phone div span {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+.plans_values .getItNow .__display .__phone img {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+}
+.plans_values .attComercial {
+  text-align: right;
+  width: 815px;
+  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 35px;
+}
+.plans_values .attComercial p {
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
 
 /*
@@ -805,6 +867,7 @@ footer .container .direitos p {
     width: 100% !important;
     margin-bottom: 20px;
   }
+
   .inputs select,
 .inputs input[type=text],
 .inputs textarea {
@@ -1493,6 +1556,7 @@ All this is done for any sub-level being entered.
   color: #ffffff;
 }
 
-/**/ /**/
+/**/
+/**/
 
 /*# sourceMappingURL=style.css.map */

@@ -30,136 +30,140 @@
 			margin-bottom:30px;
 		}
   }
-}
+  
 
-.device_tabs {
-  padding-bottom: 110px;
-
-  & .container {
-    display: flex;
-    justify-content: center;
-    gap: 0 45px;
-
-    & .__item_solution.--hover {
-      & div a {
-        position: relative;
-        background: none!important;
-        box-shadow: none;
-
-        & * {
-          position: relative;
-          z-index: 2;
-        }
-
-        &::after {
-          content: '';
-          position: absolute;
-          width: 204px;
-          height: 100%;
-          z-index: 1;
-          background: #F0F5FD;
-          transition: 0.4s all;
-          border-radius: 20px;
-        }
-
-        &:hover::after {
-          width: 300px;
-          background: main.$ColorMain 0% 0% no-repeat padding-box;
-          box-shadow: 0px 15px 30px main.$ColorMain;
-        }
-      }
-    }
-
-    //
-
-    & .__left {
+  .device_tabs {
+    padding-bottom: 110px;
+  
+    & .container {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      gap: 60px 0;
-
-      &.__item_solution.--hover {
+      gap: 0 45px;
+  
+      & .__item_solution.--hover {
         & div a {
           position: relative;
+          background: none!important;
+          box-shadow: none;
+  
+          & * {
+            position: relative;
+            z-index: 2;
+          }
   
           &::after {
-            left: 0;
+            content: '';
+            position: absolute;
+            width: 204px;
+            height: 100%;
+            z-index: 1;
+            background: #F0F5FD;
+            transition: 0.4s all;
+            border-radius: 20px;
+          }
+  
+          &:hover::after {
+            width: 300px;
+            background: main.$ColorMain 0% 0% no-repeat padding-box;
+            box-shadow: 0px 15px 30px main.$ColorMain;
           }
         }
       }
-    }
   
-    & .__image {
-      width: 560px;
-      position: relative;
-      z-index: 2;
-    }
+      //
+  
+      & .__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px 0;
+  
+        &.__item_solution.--hover {
+          & div a {
+            position: relative;
     
-    & .__right {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 60px 0;
-
-      &.__item_solution.--hover {
-        & div a {
-          position: relative;
+            &::after {
+              left: 0;
+            }
+          }
+        }
+      }
+    
+      & .__image {
+        width: 560px;
+        position: relative;
+        z-index: 2;
+      }
+      
+      & .__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 60px 0;
   
-          &::after {
-            right: 0;
+        &.__item_solution.--hover {
+          & div a {
+            position: relative;
+    
+            &::after {
+              right: 0;
+            }
           }
         }
       }
     }
   }
-}
-
-
-.contentVideo {
-  padding: 85px 0;
-  text-align: center;
-  background: main.$ColorFour;
-
-  & h2 {
+  
+  .contentVideo {
+    padding: 85px 0;
     text-align: center;
-    font-size: reset.toRem(40);
-    font-weight: 700;
-    color: main.$ColorOne;
-    margin-bottom: 90px;
-    letter-spacing: 1.6px;
-  }
-
-  & .__content {
-    margin: 0 auto;
-    position: relative;
-    width: 1100px;
-    text-align: center;
-
-    & img {
+    background: main.$ColorFour;
+  
+    & h2 {
+      text-align: center;
+      font-size: reset.toRem(40);
+      font-weight: 700;
+      color: main.$ColorOne;
+      margin-bottom: 90px;
+      letter-spacing: 1.6px;
+    }
+  
+    & .__content {
+      margin: 0 auto;
       position: relative;
-      z-index: 2;
-      box-shadow: 10px 25px 25px #00000033;
+      width: 1100px;
+      text-align: center;
+  
+      & img {
+        position: relative;
+        z-index: 2;
+        box-shadow: 10px 25px 25px #00000033;
+      }
+  
+      &::before,
+      &::after {
+        content: '';
+        width: 390px;
+        height: 340px;
+        background: url("../img/balls.png") repeat;
+        position: absolute;
+        z-index: 1;
+      }
+  
+      &::before {
+        left: -55px;
+        top: -50px;
+      }
+  
+      &::after {
+        right: -60px;
+        bottom: -50px;
+      }
     }
-
-    &::before,
-    &::after {
-      content: '';
-      width: 390px;
-      height: 340px;
-      background: url("../img/balls.png") repeat;
-      position: absolute;
-      z-index: 1;
-    }
-
-    &::before {
-      left: -55px;
-      top: -50px;
-    }
-
-    &::after {
-      right: -60px;
-      bottom: -50px;
-    }
-  }
-
+  
+  }  
 }
+
+
+
+

@@ -87,6 +87,35 @@
                <h4>Incluso em todos nossos planos<br> suporte técnico em horário comercial.</h4>
                <p>Uma equipe pronta para tirar suas dúvidas e lhe auxiliar na<br> manutenção do seu sistema <b>LR Seg.</b></p>
           </section><!--incluse-->
+     </div><!--container-->
+
+          <section class="getItNow">
+               <div class="container">
+
+                    <div class="__display">
+                         <div class="__txt">
+                              <h2>Adquira já!</h2>
+
+                              <p>Se preferir você pode entrar contato com nossos atendentes, que irão lhe ajudar e tirar suas dúvidas e adquirir seu <b>LR Seg.</b></p>
+                         </div><!--__txt-->
+
+                         <div class="__phone">
+                              <div>
+                                   <span>Pelo telefone</span>
+                                   (49) 98429-2152
+                              </div>
+
+                              <img src="assets/img/lrseg_atendente.png" alt="Atendente">
+                         </div><!--__phone-->
+                    </div><!--display-->
+
+               </div><!--container-->
+          </section><!--getItNow-->
+
+     <div class="container">
+          <section class="attComercial">   
+               <p>Atendimentos em horários comercial.</p>
+          </section><!--attComercial-->
 
           <section class="call_test">
                <div class="container">

@@ -43,4 +43,80 @@
 			margin-bottom: 20px;
 		}
   }
+
+  & .getItNow {
+	background: #F0F5FD;
+	margin-top: 80px;
+
+	& .__display {
+		width: 815px;
+		margin: 0 auto;
+		position: relative;
+		top: 55px;
+
+		& .__txt {
+			width: 350px;
+			padding: 60px 0 0 0;
+			margin-left: 55px;
+
+			& h2 {
+				font-size: reset.toRem(40);
+				font-weight: 700;
+				color: main.$ColorOne;
+				margin-bottom: 30px;
+				letter-spacing: 1.6px;
+			}
+		}
+
+		& .__phone {
+			height: 110px;
+			width: 100%;
+			background: transparent linear-gradient(106deg, #A1BD04 0%, #C3E309 100%) 0% 0% no-repeat padding-box;
+			position: relative;
+			border-radius: 30px;
+			
+			& div {
+				margin-left: 65px;
+				display:flex;
+				flex-direction: column;
+				justify-content: center;
+				height: 100%;
+				padding: 0 0 0 70px;
+				background: url("../img/ico_phone.png") left center no-repeat;
+
+				font-size: reset.toRem(25);
+				font-weight: 700;
+				color: main.$ColorThree;
+				letter-spacing: 1.6px;
+
+				& span {
+					font-size: reset.toRem(16);
+					font-weight: 400;
+					margin-bottom: 5px;
+				}
+			}
+
+
+			& img {
+				position: absolute;
+				bottom: 0;
+				right: 25px;
+			}
+		}
+	}
+  }
+
+  & .attComercial {
+	text-align: right;
+	width: 815px;
+	margin: 0 auto;
+	margin-top: 60px;
+	margin-bottom: 35px;
+	
+	& p {
+		font-size: reset.toRem(12);
+		font-weight: 300;
+		letter-spacing: 0.5px;
+	}
+  }
 }
