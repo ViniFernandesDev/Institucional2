@@ -22,7 +22,7 @@
 
                <p>De fim ao uso de papel para coleta de dados, check lists, avaliações e outros mais. A solução <b>LR Seg</b> permite reunir todas essas informações de forma digital e prática em um único lugar e compartilhar com diversas outras ferramentas.</p>
 
-               <div class="__list">
+               <div class="__list __item_solution">
                     <div>
                     <a href="">
                          <figure><img src="assets/img/emphasis/icone1.png" alt=""></figure>

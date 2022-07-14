@@ -427,45 +427,6 @@ footer .container .direitos p {
   margin-top: 50px;
   padding-bottom: 80px;
 }
-.contentEmphasis .container .__left .__list div a {
-  width: 204px;
-  height: 240px;
-  background: #F0F5FD;
-  border-radius: 20px;
-  text-align: center;
-  padding: 0 30px;
-  transition: 0.2s all;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px 0;
-}
-.contentEmphasis .container .__left .__list div a * {
-  transition: 0.2s all;
-}
-.contentEmphasis .container .__left .__list div a figure {
-  height: 78px;
-  display: flex;
-  align-items: center;
-}
-.contentEmphasis .container .__left .__list div a span {
-  display: block;
-  color: #03325B;
-  font-size: 1rem;
-  font-weight: 500;
-  line-height: 25px;
-}
-.contentEmphasis .container .__left .__list div a:hover {
-  background: #A1BD04 0% 0% no-repeat padding-box;
-  box-shadow: 0px 15px 30px #A1BD04;
-}
-.contentEmphasis .container .__left .__list div a:hover img {
-  filter: grayscale(0) brightness(0%) contrast(100%) invert(100%) !important;
-}
-.contentEmphasis .container .__left .__list div a:hover span {
-  color: #ffffff;
-}
 .contentEmphasis .container .__right {
   width: 530px;
   padding-left: 55px;
@@ -498,9 +459,132 @@ footer .container .direitos p {
 
 /*
   ========================================
-  SOLUCAO
+  SOLUTION
   ========================================
 */
+.solution .__textMain {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: 80px;
+}
+.solution .__textMain .container div {
+  width: 720px;
+  margin: 0 auto;
+}
+.solution .__textMain h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #03325B;
+  margin-bottom: 40px;
+  letter-spacing: 1.6px;
+}
+.solution .__textMain p {
+  margin-bottom: 30px;
+}
+
+.device_tabs {
+  padding-bottom: 110px;
+}
+.device_tabs .container {
+  display: flex;
+  justify-content: center;
+  gap: 0 45px;
+}
+.device_tabs .container .__item_solution.--hover div a {
+  position: relative;
+  background: none !important;
+  box-shadow: none;
+}
+.device_tabs .container .__item_solution.--hover div a * {
+  position: relative;
+  z-index: 2;
+}
+.device_tabs .container .__item_solution.--hover div a::after {
+  content: "";
+  position: absolute;
+  width: 204px;
+  height: 100%;
+  z-index: 1;
+  background: #F0F5FD;
+  transition: 0.4s all;
+  border-radius: 20px;
+}
+.device_tabs .container .__item_solution.--hover div a:hover::after {
+  width: 300px;
+  background: #A1BD04 0% 0% no-repeat padding-box;
+  box-shadow: 0px 15px 30px #A1BD04;
+}
+.device_tabs .container .__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px 0;
+}
+.device_tabs .container .__left.__item_solution.--hover div a {
+  position: relative;
+}
+.device_tabs .container .__left.__item_solution.--hover div a::after {
+  left: 0;
+}
+.device_tabs .container .__image {
+  width: 560px;
+  position: relative;
+  z-index: 2;
+}
+.device_tabs .container .__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px 0;
+}
+.device_tabs .container .__right.__item_solution.--hover div a {
+  position: relative;
+}
+.device_tabs .container .__right.__item_solution.--hover div a::after {
+  right: 0;
+}
+
+.contentVideo {
+  padding: 85px 0;
+  text-align: center;
+  background: #F0F5FD;
+}
+.contentVideo h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #03325B;
+  margin-bottom: 90px;
+  letter-spacing: 1.6px;
+}
+.contentVideo .__content {
+  margin: 0 auto;
+  position: relative;
+  width: 1100px;
+  text-align: center;
+}
+.contentVideo .__content img {
+  position: relative;
+  z-index: 2;
+  box-shadow: 10px 25px 25px rgba(0, 0, 0, 0.2);
+}
+.contentVideo .__content::before, .contentVideo .__content::after {
+  content: "";
+  width: 390px;
+  height: 340px;
+  background: url("../img/balls.png") repeat;
+  position: absolute;
+  z-index: 1;
+}
+.contentVideo .__content::before {
+  left: -55px;
+  top: -50px;
+}
+.contentVideo .__content::after {
+  right: -60px;
+  bottom: -50px;
+}
+
 /*
   ========================================
   SOBRE NOS
@@ -1004,7 +1088,7 @@ All this is done for any sub-level being entered.
 .internal {
   margin-top: 240px;
 }
-.internal .container {
+.internal.container, .internal .container {
   padding: 0 80px;
 }
 .internal .__titleMain h1 {
@@ -1264,6 +1348,51 @@ All this is done for any sub-level being entered.
 .findPlan .__display .--emphasis a {
   margin-top: 40px;
   border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+/*
+  ========================================
+  ITEM SOLUTION
+  ========================================
+*/
+.__item_solution div a {
+  width: 204px;
+  height: 240px;
+  background: #F0F5FD;
+  border-radius: 20px;
+  text-align: center;
+  padding: 0 30px;
+  transition: 0.2s all;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px 0;
+}
+.__item_solution div a * {
+  transition: 0.2s all;
+}
+.__item_solution div a figure {
+  height: 78px;
+  display: flex;
+  align-items: center;
+}
+.__item_solution div a span {
+  display: block;
+  color: #03325B;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 25px;
+}
+.__item_solution div a:hover {
+  background: #A1BD04 0% 0% no-repeat padding-box;
+  box-shadow: 0px 15px 30px #A1BD04;
+}
+.__item_solution div a:hover img {
+  filter: grayscale(0) brightness(0%) contrast(100%) invert(100%) !important;
+}
+.__item_solution div a:hover span {
   color: #ffffff;
 }
 

@@ -47,52 +47,6 @@
         gap: 35px 65px;
         margin-top: 50px;
         padding-bottom: 80px;
-
-        & div a {
-          width: 204px;
-          height: 240px;
-          background: main.$ColorFour;
-          border-radius: 20px;
-          text-align: center;
-          padding: 0 30px;
-          transition: 0.2s all;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 20px 0;
-
-          & * {
-            transition: 0.2s all;
-          }
-
-          & figure {
-            height: 78px;
-            display: flex;
-            align-items: center;
-          }
-
-          & span {
-            display: block;
-            color: main.$ColorOne;
-            font-size: reset.toRem(16);
-            font-weight: 500;
-            line-height: 25px;
-          }
-
-          &:hover {
-            background: main.$ColorMain 0% 0% no-repeat padding-box;
-            box-shadow: 0px 15px 30px main.$ColorMain;
-
-            & img {
-              filter:grayscale(0) brightness(0%) contrast(100%) invert(100%)!important
-            }
-
-            & span {
-              color:#ffffff;
-            }
-          }
-        }
       }
     }
   
