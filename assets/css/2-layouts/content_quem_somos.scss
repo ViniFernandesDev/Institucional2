@@ -6,3 +6,195 @@
   SOBRE NOS
   ========================================
 */
+
+.sobreNos {
+
+  /* SUB TITLE */
+  & .__subTitle {
+    margin-top: 46px;
+    margin-bottom: 26px;
+
+    & h2,
+    & span {
+      font-size: reset.toRem(40);
+      font-weight: bold;
+      color: main.$ColorOne;
+    }
+
+    & span {
+      color: main.$ColorMain;
+    }
+  }
+
+  /* CONTENT_1 */
+  & .content_1 {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 20px;
+
+    & .container {
+      & .display {
+        display: flex;
+        gap: 0 154px;
+
+        & .txt {
+          width: 538px;
+
+          & p {
+            color: main.$ColorTwo;
+            letter-spacing: 0;
+            line-height: 2.4;
+            margin: 0;
+          }
+
+          & h3 {
+            font-size: reset.toRem(25);
+            font-weight: 300;
+            line-height: 1.8;
+            color: main.$ColorOne;
+            margin-top: 66px;
+            margin-bottom: 52px;
+          }
+        }
+
+        & .img {
+          width: 628px;
+          position: relative;
+
+          & .imgMain {
+            & img {
+              border-radius: 20px;
+              box-shadow: 0px 3px 50px #00000029;
+            }
+          }
+
+          & .circle1 {
+            & img {
+              position: absolute;
+              width: 155px;
+              top: 105px;
+              left: -85px;
+              z-index: -1;
+            }
+          }
+
+          & .circle2 {
+            & img {
+              position: absolute;
+              top: 274px;
+              right: -150px;
+              z-index: -1;
+            }
+          }
+
+          & .circle3 {
+            & img {
+              position: absolute;
+              height: 415px;
+              top: 360px;
+              right: -480px;
+              z-index: -1;
+            }
+          }
+
+          & .circle4 {
+            & img {
+              position: absolute;
+              width: 38px;
+              bottom: 145px;
+              right: -50px;
+              z-index: -1;
+            }
+          }
+
+          & .circle5 {
+            & img {
+              position: absolute;
+              width: 145px;
+              bottom: -20px;
+              right: -68px;
+              z-index: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* CONTENT_2 */
+  & .content_2 {
+    padding-bottom: 115px;
+    margin-top: -16px;
+
+    & .container {
+      display: flex;
+      align-items: end;
+      height: 638px;
+
+      overflow: hidden;
+
+      & .content {
+        width: 80%;
+        margin: 0 auto;
+
+        & .main {
+          & h2 {
+            color: main.$ColorOne;
+            margin-left: 138px;
+            font-size: reset.toRem(40);
+            font-weight: bold;
+            margin-bottom: 40px;
+          }
+        }
+
+        & .footer {
+          height: 198px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-color: main.$ColorMain;
+          border-radius: 30px;
+          padding-left: 138px;
+          position: relative;
+          z-index: 2;
+
+          & h2 {
+            font-size: reset.toRem(25);
+            letter-spacing: 1px;
+            margin-bottom: 22px;
+          }
+
+          & .button {
+            width: 320px;
+
+            & a {
+              border: 2px solid main.$ColorFour;
+              border-radius: 20px;
+              padding: 10px 25px;
+            }
+          }
+
+          & .imgMain {
+            & img {
+              position: absolute;
+              bottom: -330px;
+              right: -50px;
+            }
+          }
+
+          & .imgSecond {
+            & img {
+              position: absolute;
+              bottom: 70px;
+              width: 439px;
+              right: 125px;
+              z-index: -1;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}

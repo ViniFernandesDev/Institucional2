@@ -685,6 +685,150 @@ RESPONSIVE
   SOBRE NOS
   ========================================
 */
+.sobreNos {
+  /* SUB TITLE */
+  /* CONTENT_1 */
+  /* CONTENT_2 */
+}
+.sobreNos .__subTitle {
+  margin-top: 46px;
+  margin-bottom: 26px;
+}
+.sobreNos .__subTitle h2, .sobreNos .__subTitle span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #03325B;
+}
+.sobreNos .__subTitle span {
+  color: #A1BD04;
+}
+.sobreNos .content_1 {
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.sobreNos .content_1 .container .display {
+  display: flex;
+  gap: 0 154px;
+}
+.sobreNos .content_1 .container .display .txt {
+  width: 538px;
+}
+.sobreNos .content_1 .container .display .txt p {
+  color: #5F5F5F;
+  letter-spacing: 0;
+  line-height: 2.4;
+  margin: 0;
+}
+.sobreNos .content_1 .container .display .txt h3 {
+  font-size: 1.5625rem;
+  font-weight: 300;
+  line-height: 1.8;
+  color: #03325B;
+  margin-top: 66px;
+  margin-bottom: 52px;
+}
+.sobreNos .content_1 .container .display .img {
+  width: 628px;
+  position: relative;
+}
+.sobreNos .content_1 .container .display .img .imgMain img {
+  border-radius: 20px;
+  box-shadow: 0px 3px 50px rgba(0, 0, 0, 0.1607843137);
+}
+.sobreNos .content_1 .container .display .img .circle1 img {
+  position: absolute;
+  width: 155px;
+  top: 105px;
+  left: -85px;
+  z-index: -1;
+}
+.sobreNos .content_1 .container .display .img .circle2 img {
+  position: absolute;
+  top: 274px;
+  right: -150px;
+  z-index: -1;
+}
+.sobreNos .content_1 .container .display .img .circle3 img {
+  position: absolute;
+  height: 415px;
+  top: 360px;
+  right: -480px;
+  z-index: -1;
+}
+.sobreNos .content_1 .container .display .img .circle4 img {
+  position: absolute;
+  width: 38px;
+  bottom: 145px;
+  right: -50px;
+  z-index: -1;
+}
+.sobreNos .content_1 .container .display .img .circle5 img {
+  position: absolute;
+  width: 145px;
+  bottom: -20px;
+  right: -68px;
+  z-index: 0;
+}
+.sobreNos .content_2 {
+  padding-bottom: 115px;
+  margin-top: -16px;
+}
+.sobreNos .content_2 .container {
+  display: flex;
+  align-items: end;
+  height: 638px;
+  overflow: hidden;
+}
+.sobreNos .content_2 .container .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.sobreNos .content_2 .container .content .main h2 {
+  color: #03325B;
+  margin-left: 138px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.sobreNos .content_2 .container .content .footer {
+  height: 198px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #A1BD04;
+  border-radius: 30px;
+  padding-left: 138px;
+  position: relative;
+  z-index: 2;
+}
+.sobreNos .content_2 .container .content .footer h2 {
+  font-size: 1.5625rem;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+.sobreNos .content_2 .container .content .footer .button {
+  width: 320px;
+}
+.sobreNos .content_2 .container .content .footer .button a {
+  border: 2px solid #F0F5FD;
+  border-radius: 20px;
+  padding: 10px 25px;
+}
+.sobreNos .content_2 .container .content .footer .imgMain img {
+  position: absolute;
+  bottom: -330px;
+  right: -50px;
+}
+.sobreNos .content_2 .container .content .footer .imgSecond img {
+  position: absolute;
+  bottom: 70px;
+  width: 439px;
+  right: 125px;
+  z-index: -1;
+}
+
 /*
   ========================================
   PLANS VALUES
