@@ -65,7 +65,7 @@
     & .demonstration {
       margin-top: 80px;
       @include main.FlexCenCen;
-      gap: 0 80px;
+      gap: 0 50px;
 
       & .txt {
         text-align: left;
@@ -93,4 +93,182 @@
         }
       }
     }
+}
+
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) {
+  .versatility {
+      padding: 30px 0 50px 0;
+
+      & h2 {
+          font-size: reset.toRem(30);
+      }
+
+      & p {
+          margin-bottom: 50px;
+      }
+
+      & .devices {
+        gap: 25px 25px;
+
+        & div {
+          padding: 25px 0 0 0;
+          height: 340px;
+
+          & h3 {
+            font-size: reset.toRem(22);
+          }
+        }
+      }
+
+      & .demonstration {
+        margin-top: 40px;
+        gap: 0 30px;
+
+        & img {
+          width: 250px;
+        }
+
+        & .txt {
+          & h4 {
+            font-size: reset.toRem(30);
+          }
+
+          & div {
+            gap: 0 15px;
+
+            & p {
+              font-size: reset.toRem(16);
+            }
+          }
+        }
+      }
+  }
+}
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+  .versatility {
+    padding: 30px 0 50px 0;
+
+    & h2 {
+        font-size: reset.toRem(30);
+    }
+
+    & p {
+        margin-bottom: 50px;
+    }
+
+    & .devices {
+      gap: 25px 25px;
+
+      & div {
+        padding: 25px 0 0 0;
+        height: 340px;
+
+        & h3 {
+          font-size: reset.toRem(22);
+        }
+      }
+    }
+
+    & .demonstration {
+      margin-top: 40px;
+      gap: 0 30px;
+
+      & .img {
+        display: none;
+      }
+
+      & .txt {
+        width: 100%;
+
+        & h4 {
+          font-size: reset.toRem(26);
+          text-align: center;
+          padding: 0 15%;
+
+          & br {
+            display: none;
+          }
+        }
+
+        & div {
+          gap: 0 15px;
+          flex-wrap: wrap;
+          justify-content: center;
+          text-align: center;
+
+          & p {
+            width: 100%;
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* TABLET BIG - 900px*/ 
+@include main.breakpoint(smashTabletBig) {
+  .versatility {
+    padding: 30px 0 50px 0;
+
+    & h2,
+    & p,
+    & .devices {
+      display: none;
+    }
+
+    & .demonstration {
+      margin-top: 0;
+      gap: 0 30px;
+
+      & .img {
+        display: none;
+      }
+
+      & .txt {
+        width: 100%;
+
+        & h4 {
+          font-size: reset.toRem(26);
+          text-align: center;
+          padding: 0 10%;
+
+          & br {
+            display: none;
+          }
+        }
+
+        & div {
+          gap: 0 15px;
+          flex-wrap: wrap;
+          justify-content: center;
+          text-align: center;
+
+          & p {
+            width: 100%;
+            margin-bottom: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* TABLET - 600px*/ 
+@include main.breakpoint(smashTablet) {
+  .versatility {
+    padding: 25px 0 40px 0;
+
+    & .demonstration {
+      & .txt {
+        & h4 {
+          font-size: reset.toRem(22);
+          padding: 0 0;
+        }
+      }
+    }
+  }
 }

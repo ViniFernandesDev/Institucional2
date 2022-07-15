@@ -80,3 +80,10 @@ p {
 }
 
 // largureContainer -> BREAKPOINT DA LARGURA DO CONTAINER
+
+/* TABLET BIG - 900px*/ 
+@include breakpoint(smashTabletBig) {
+   p {
+      line-height: 1.4;
+   }
+}

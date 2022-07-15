@@ -84,3 +84,79 @@
     }
   }
 }
+
+/*********
+RESPONSIVE
+*********/
+
+/* DESKTOP - 1600px */
+
+@media screen and (max-width: 1600px) {
+  .contentEmphasis .container .__right::after {
+      right: -140px;
+    }
+}
+
+/* DESKTOP LARGE - 1400px*/ 
+@include main.breakpoint(smashDesktopLarge) {
+  .contentEmphasis .container .__right::after {
+    display: none;
+  }
+}
+
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) {
+  .contentEmphasis .container .__right {
+    width: 430px;
+    padding: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+  .contentEmphasis {
+    margin-bottom: 40px;
+  
+    & .container {
+      flex-wrap: wrap;
+      gap: 0 30px;
+      margin-top: 20px;
+  
+      & .__left {
+        width: 100%;
+  
+        & h1 {
+          font-size: reset.toRem(30);
+          margin-bottom: 20px;
+          text-align: center;
+          line-height: 1.3;
+
+          & br {
+            display: none;
+          }
+  
+          &::after {
+            display: none;
+          }
+        }
+  
+        & .__list {
+          gap: 15px 10px;
+          margin-top: 40px;
+          padding-bottom: 0;
+          justify-content: center;
+        }
+      }
+    
+      & .__right {
+        width: 100%;
+        display: none;
+      }
+    }
+  }
+  
+}

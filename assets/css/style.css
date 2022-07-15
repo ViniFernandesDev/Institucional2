@@ -115,6 +115,12 @@ p {
   padding-right: 20px;
 }
 
+/* TABLET BIG - 900px*/
+@media (max-width: 56.25rem) {
+  p {
+    line-height: 1.4;
+  }
+}
 /* DESKTOP LARGE - 1400px*/
 /* DESKTOP - 1200px*/
 /* LAPTOP - 1024px*/
@@ -145,13 +151,15 @@ header.fixed {
   box-shadow: -1px -15px 38px #2a2c42;
 }
 header.fixed .container {
-  padding: 15px 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 55px 0;
+  padding-top: 55px;
+  padding-bottom: 55px;
   transition: 0.3s all;
 }
 header .container .navigation nav ul {
@@ -170,23 +178,57 @@ header .container .navigation nav ul li a:hover {
   text-shadow: 1px 3px 2px #c3e309;
 }
 
+/*********
+RESPONSIVE
+**********/
+/* DESKTOP LARGE - 1400px*/
+@media screen and (max-width: 87.5rem) {
+  header .container .navigation nav ul li a {
+    font-size: 1.125rem;
+    padding: 10px 18px;
+  }
+}
+/* DESKTOP - 1200px*/
+@media (max-width: 75rem) {
+  header .container .navigation nav ul li a {
+    font-size: 1rem;
+    padding: 10px 14px;
+  }
+}
+/*PERSONALIZATION 1100PX*/
+@media screen and (max-width: 68.75rem) {
+  header .container {
+    align-items: flex-end;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  header .container .navigation {
+    display: none;
+  }
+  header.fixed .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  header .button {
+    display: none;
+  }
+}
 /*
   ========================================
   FOOTER
   ========================================
 */
 footer {
-  height: 498px;
+  padding: 30px 0;
 }
 footer .container {
-  height: 100%;
   max-width: 70rem;
 }
 footer .container .display {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 90%;
+  margin-bottom: 35px;
 }
 footer .container .display .item1 {
   display: flex;
@@ -224,6 +266,8 @@ footer .container .display .item1 .links nav ul li :hover {
 }
 footer .container .display .item2 {
   width: 40%;
+}
+footer .container .display .item2 form {
   position: relative;
 }
 footer .container .display .item2 p {
@@ -236,33 +280,20 @@ footer .container .display .item2 input {
   border-radius: 100px;
   padding-left: 25px;
   width: 100%;
-  border: solid 1px #03325B;
-  outline-color: #A1BD04;
 }
 footer .container .display .item2 .button {
   width: 110px;
   position: absolute;
-  top: 55px;
+  top: 5px;
   right: 7px;
 }
 footer .container .display .item2 .button.--type_1 input {
-  background: #A1BD04;
-  text-align: center;
-  border-radius: 30px;
-  padding: 0;
   height: 45px;
-  background: #A1BD04 0% 0% no-repeat padding-box;
-  box-shadow: 0px 15px 30px #A1BD04;
-  display: block;
   font-size: 0.75rem;
-  font-weight: 600;
-  color: #ffffff;
-  transition: 0.3s all;
-  border: none;
-  cursor: pointer;
   font-weight: 300;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2509803922);
   letter-spacing: 0.5px;
+  border: 1px solid #A1BD04;
+  padding: 10px 0;
 }
 footer .container .display .item2 .button.--type_1 input:hover {
   background: #C3E309;
@@ -296,7 +327,9 @@ footer .container .direitos {
   gap: 10px;
 }
 footer .container .direitos p {
-  font-size: 0.875rem;
+  font-size: 0.625rem;
+  color: #023859;
+  margin-bottom: 0;
 }
 
 /* DESKTOP - 1200px*/
@@ -316,8 +349,12 @@ footer .container .direitos p {
 }
 /* LAPTOP - 1024px*/
 @media (max-width: 64rem) {
+  footer {
+    padding-top: 15px;
+  }
   footer .container .display {
-    margin-top: -60px;
+    height: auto;
+    margin-top: 0px;
     flex-wrap: wrap;
   }
   footer .container .display .item1 {
@@ -335,27 +372,26 @@ footer .container .direitos p {
   footer .container .display .item1 .information a {
     font-size: 1.25rem;
   }
+  footer .container .display .item1 .information p {
+    margin-top: 25px;
+  }
   footer .container .display .item1 .links {
     display: none;
   }
   footer .container .display .item2 {
     width: 100%;
-    margin-top: -70px;
   }
   footer .container .display .item2 p {
     margin-top: 0;
     text-align: center;
   }
+  footer .container .display .item2 form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
   footer .container .display .item2 input {
-    width: 90%;
-    margin-left: 5%;
-  }
-  footer .container .display .item2 .button {
-    top: 56px;
-    right: 5%;
-  }
-  footer .container .display .item2 .button input {
-    font-size: 0.75rem !important;
+    width: 100%;
+    margin: 0;
   }
   footer .container .display .item2 h2 {
     text-align: center;
@@ -457,6 +493,67 @@ footer .container .direitos p {
   width: 550px;
 }
 
+/*********
+RESPONSIVE
+*********/
+/* DESKTOP - 1600px */
+@media screen and (max-width: 1600px) {
+  .contentEmphasis .container .__right::after {
+    right: -140px;
+  }
+}
+/* DESKTOP LARGE - 1400px*/
+@media screen and (max-width: 87.5rem) {
+  .contentEmphasis .container .__right::after {
+    display: none;
+  }
+}
+/* DESKTOP - 1200px*/
+@media (max-width: 75rem) {
+  .contentEmphasis .container .__right {
+    width: 430px;
+    padding: 0;
+  }
+  .contentEmphasis .container .__right::before {
+    display: none;
+  }
+}
+/* LAPTOP - 1024px*/
+@media (max-width: 64rem) {
+  .contentEmphasis {
+    margin-bottom: 40px;
+  }
+  .contentEmphasis .container {
+    flex-wrap: wrap;
+    gap: 0 30px;
+    margin-top: 20px;
+  }
+  .contentEmphasis .container .__left {
+    width: 100%;
+  }
+  .contentEmphasis .container .__left h1 {
+    font-size: 1.875rem;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.3;
+  }
+  .contentEmphasis .container .__left h1 br {
+    display: none;
+  }
+  .contentEmphasis .container .__left h1::after {
+    display: none;
+  }
+  .contentEmphasis .container .__left .__list {
+    gap: 15px 10px;
+    margin-top: 40px;
+    padding-bottom: 0;
+    justify-content: center;
+  }
+  .contentEmphasis .container .__right {
+    width: 100%;
+    display: none;
+  }
+}
 /*
   ========================================
   SOLUTION
@@ -1076,7 +1173,7 @@ All this is done for any sub-level being entered.
   BUTTONS
   ========================================
 */
-.button a {
+.button input[type=submit], .button a {
   background: #A1BD04;
   text-transform: uppercase;
   border-radius: 35px;
@@ -1087,7 +1184,7 @@ All this is done for any sub-level being entered.
   color: #ffffff;
   transition: 0.3s all;
 }
-.button a:hover {
+.button input[type=submit]:hover, .button a:hover {
   background: #C3E309;
   box-shadow: 0px 1px 8px #C3E309;
 }
@@ -1148,15 +1245,17 @@ All this is done for any sub-level being entered.
   color: #A1BD04;
 }
 .findPlan .__display {
+  margin-bottom: 25px;
+}
+.findPlan .__display .__scroll {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px 32px;
-  flex-wrap: wrap;
   margin-top: 45px;
   /*EMPHASIS*/
 }
-.findPlan .__display .item {
+.findPlan .__display .__scroll .item {
   width: 370px;
   border: 1px solid #D1DBE3;
   border-radius: 15px;
@@ -1164,82 +1263,178 @@ All this is done for any sub-level being entered.
   text-align: center;
   margin-bottom: 35px;
 }
-.findPlan .__display .item span {
+.findPlan .__display .__scroll .item span {
   display: block;
 }
-.findPlan .__display .item .type1 {
+.findPlan .__display .__scroll .item .type1 {
   font-size: 0.9375rem;
   font-weight: 500;
   color: #5F5F5F;
   margin-bottom: 8px;
 }
-.findPlan .__display .item .type2 {
+.findPlan .__display .__scroll .item .type2 {
   font-size: 2.5rem;
   font-weight: 700;
   color: #03325B;
   margin-bottom: 22px;
 }
-.findPlan .__display .item .type3 {
+.findPlan .__display .__scroll .item .type3 {
   font-size: 1rem;
   font-weight: 300;
   color: #5F5F5F;
   margin-bottom: 8px;
   line-height: 1.8;
 }
-.findPlan .__display .item .type4 {
+.findPlan .__display .__scroll .item .type4 {
   font-size: 1.5625rem;
   font-weight: 700;
   color: #A1BD04;
   margin: 30px 0 40px 0;
 }
-.findPlan .__display .item .type5 {
+.findPlan .__display .__scroll .item .type5 {
   font-size: 1.125rem;
   font-weight: 600;
   color: #A1BD04;
   margin-bottom: 5px;
 }
-.findPlan .__display .item .type6 {
+.findPlan .__display .__scroll .item .type6 {
   font-size: 1rem;
   font-weight: 600;
   color: #A1BD04;
 }
-.findPlan .__display .item a {
+.findPlan .__display .__scroll .item a {
   display: inline-block;
   margin-top: 20px;
   border-radius: 14px;
 }
-.findPlan .__display .--emphasis {
+.findPlan .__display .__scroll .--emphasis {
   padding: 50px 25px;
   background: #A1BD04 0% 0% no-repeat padding-box;
   box-shadow: 0px 15px 30px #A1BD04;
   border: 1px solid #A1BD04;
 }
-.findPlan .__display .--emphasis .type2 {
+.findPlan .__display .__scroll .--emphasis .type2 {
   margin-bottom: 10px;
 }
-.findPlan .__display .--emphasis .type3 {
+.findPlan .__display .__scroll .--emphasis .type3 {
   color: #ffffff;
 }
-.findPlan .__display .--emphasis .type3.--gray {
+.findPlan .__display .__scroll .--emphasis .type3.--gray {
   color: #5F5F5F;
 }
-.findPlan .__display .--emphasis .type4 {
+.findPlan .__display .__scroll .--emphasis .type4 {
   color: #ffffff;
   margin: 25px 0 50px 0;
 }
-.findPlan .__display .--emphasis .type5 {
+.findPlan .__display .__scroll .--emphasis .type5 {
   color: #ffffff;
 }
-.findPlan .__display .--emphasis .type6 {
+.findPlan .__display .__scroll .--emphasis .type6 {
   color: #ffffff;
   margin-bottom: 35px;
 }
-.findPlan .__display .--emphasis a {
+.findPlan .__display .__scroll .--emphasis a {
   margin-top: 40px;
   border: 2px solid #ffffff;
   color: #ffffff;
 }
 
+/*********
+RESPONSIVE
+*********/
+/* LAPTOP - 1024px*/
+@media screen and (max-width: 80rem) {
+  .findPlan {
+    padding-bottom: 20px;
+  }
+  .findPlan .__title.--type1 h3 {
+    font-size: 1.875rem;
+  }
+  .findPlan .__title.--type2 h2 {
+    font-size: 1.875rem;
+  }
+  .findPlan .__display {
+    overflow-x: scroll;
+    margin-top: 30px;
+  }
+  .findPlan .__display .__scroll {
+    gap: 25px 25px;
+    margin-top: 40px;
+    width: 990px;
+    margin: 0 auto;
+    /*EMPHASIS*/
+  }
+  .findPlan .__display .__scroll .item {
+    width: 300px;
+    padding: 25px 25px;
+  }
+  .findPlan .__display .__scroll .item .type2 {
+    font-size: 1.875rem;
+    margin-bottom: 15px;
+  }
+  .findPlan .__display .__scroll .item .type4 {
+    font-size: 1.375rem;
+    margin: 20px 0 30px 0;
+  }
+  .findPlan .__display .__scroll .item .type5 {
+    font-size: 1rem;
+  }
+  .findPlan .__display .__scroll .--emphasis {
+    padding: 30px 25px;
+  }
+  .findPlan .__display .__scroll .--emphasis .type2 {
+    margin-bottom: 10px;
+  }
+  .findPlan .__display .__scroll .--emphasis .type4 {
+    margin: 25px 0 40px 0;
+  }
+  .findPlan .__display .__scroll .--emphasis .type6 {
+    margin-bottom: 25px;
+  }
+  .findPlan .__display .__scroll .--emphasis a {
+    margin-top: 30px;
+  }
+}
+/* TABLET BIG - 900px*/
+@media (max-width: 56.25rem) {
+  .findPlan .__title.--type1 h3 {
+    font-size: 1.5625rem;
+  }
+  .findPlan .__title.--type2 h2 {
+    font-size: 1.5625rem;
+  }
+  .findPlan .__display .__scroll {
+    width: 900px;
+    /*EMPHASIS*/
+  }
+  .findPlan .__display .__scroll .item {
+    width: 300px;
+  }
+  .findPlan .__display .__scroll .item .type2 {
+    font-size: 1.75rem;
+  }
+  .findPlan .__display .__scroll .item .type4 {
+    font-size: 1.25rem;
+  }
+  .findPlan .__display .__scroll .item .type3 {
+    line-height: 1.4;
+  }
+  .findPlan .__display .__scroll .--emphasis {
+    padding: 40px 25px;
+  }
+  .findPlan .__display .__scroll .--emphasis .type2 {
+    margin-bottom: 10px;
+  }
+  .findPlan .__display .__scroll .--emphasis .type4 {
+    margin: 25px 0 40px 0;
+  }
+  .findPlan .__display .__scroll .--emphasis .type6 {
+    margin-bottom: 25px;
+  }
+  .findPlan .__display .__scroll .--emphasis a {
+    margin-top: 30px;
+  }
+}
 /*
   ========================================
   TITLE INTERNAL
@@ -1325,7 +1520,7 @@ All this is done for any sub-level being entered.
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0 80px;
+  gap: 0 50px;
 }
 .versatility .demonstration .txt {
   text-align: left;
@@ -1352,6 +1547,141 @@ All this is done for any sub-level being entered.
   line-height: 1.4;
 }
 
+/* DESKTOP - 1200px*/
+@media (max-width: 75rem) {
+  .versatility {
+    padding: 30px 0 50px 0;
+  }
+  .versatility h2 {
+    font-size: 1.875rem;
+  }
+  .versatility p {
+    margin-bottom: 50px;
+  }
+  .versatility .devices {
+    gap: 25px 25px;
+  }
+  .versatility .devices div {
+    padding: 25px 0 0 0;
+    height: 340px;
+  }
+  .versatility .devices div h3 {
+    font-size: 1.375rem;
+  }
+  .versatility .demonstration {
+    margin-top: 40px;
+    gap: 0 30px;
+  }
+  .versatility .demonstration img {
+    width: 250px;
+  }
+  .versatility .demonstration .txt h4 {
+    font-size: 1.875rem;
+  }
+  .versatility .demonstration .txt div {
+    gap: 0 15px;
+  }
+  .versatility .demonstration .txt div p {
+    font-size: 1rem;
+  }
+}
+/* LAPTOP - 1024px*/
+@media (max-width: 64rem) {
+  .versatility {
+    padding: 30px 0 50px 0;
+  }
+  .versatility h2 {
+    font-size: 1.875rem;
+  }
+  .versatility p {
+    margin-bottom: 50px;
+  }
+  .versatility .devices {
+    gap: 25px 25px;
+  }
+  .versatility .devices div {
+    padding: 25px 0 0 0;
+    height: 340px;
+  }
+  .versatility .devices div h3 {
+    font-size: 1.375rem;
+  }
+  .versatility .demonstration {
+    margin-top: 40px;
+    gap: 0 30px;
+  }
+  .versatility .demonstration .img {
+    display: none;
+  }
+  .versatility .demonstration .txt {
+    width: 100%;
+  }
+  .versatility .demonstration .txt h4 {
+    font-size: 1.625rem;
+    text-align: center;
+    padding: 0 15%;
+  }
+  .versatility .demonstration .txt h4 br {
+    display: none;
+  }
+  .versatility .demonstration .txt div {
+    gap: 0 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .versatility .demonstration .txt div p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+/* TABLET BIG - 900px*/
+@media (max-width: 56.25rem) {
+  .versatility {
+    padding: 30px 0 50px 0;
+  }
+  .versatility h2, .versatility p, .versatility .devices {
+    display: none;
+  }
+  .versatility .demonstration {
+    margin-top: 0;
+    gap: 0 30px;
+  }
+  .versatility .demonstration .img {
+    display: none;
+  }
+  .versatility .demonstration .txt {
+    width: 100%;
+  }
+  .versatility .demonstration .txt h4 {
+    font-size: 1.625rem;
+    text-align: center;
+    padding: 0 10%;
+  }
+  .versatility .demonstration .txt h4 br {
+    display: none;
+  }
+  .versatility .demonstration .txt div {
+    gap: 0 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  .versatility .demonstration .txt div p {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+}
+/* TABLET - 600px*/
+@media (max-width: 37.5rem) {
+  .versatility {
+    padding: 25px 0 40px 0;
+  }
+  .versatility .demonstration .txt h4 {
+    font-size: 1.375rem;
+    padding: 0 0;
+  }
+}
 /*
   ========================================
   CALL TEST
@@ -1392,125 +1722,28 @@ All this is done for any sub-level being entered.
   margin-top: 45px;
 }
 
-.findPlan {
-  text-align: center;
-  padding-bottom: 50px;
+/* LAPTOP - 1024px*/
+@media (max-width: 64rem) {
+  .call_test {
+    text-align: center;
+    padding: 25px 0 40px 0;
+  }
+  .call_test h3 {
+    font-size: 1.875rem;
+  }
+  .call_test .button {
+    margin-top: 30px;
+  }
 }
-.findPlan .__titleType1 {
-  text-align: center;
+/* TABLET - 600px*/
+@media (max-width: 37.5rem) {
+  .call_test {
+    padding: 15px 0 30px 0;
+  }
+  .call_test h3 {
+    font-size: 1.5625rem;
+  }
 }
-.findPlan .__titleType1 h2 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #A1BD04;
-  margin-bottom: 10px;
-  letter-spacing: 1.6px;
-}
-.findPlan .__titleType1 h3 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #03325B;
-  margin-bottom: 10px;
-}
-.findPlan .__titleType1 p {
-  margin: 0;
-}
-.findPlan .__titleType1 p span {
-  color: #A1BD04;
-}
-.findPlan .__display {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 25px 32px;
-  flex-wrap: wrap;
-  margin-top: 45px;
-  /*EMPHASIS*/
-}
-.findPlan .__display .item {
-  width: 370px;
-  border: 1px solid #D1DBE3;
-  border-radius: 15px;
-  padding: 45px 25px;
-  text-align: center;
-  margin-bottom: 35px;
-}
-.findPlan .__display .item span {
-  display: block;
-}
-.findPlan .__display .item .type1 {
-  font-size: 0.9375rem;
-  font-weight: 500;
-  color: #5F5F5F;
-  margin-bottom: 8px;
-}
-.findPlan .__display .item .type2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #03325B;
-  margin-bottom: 22px;
-}
-.findPlan .__display .item .type3 {
-  font-size: 1rem;
-  font-weight: 300;
-  color: #5F5F5F;
-  margin-bottom: 8px;
-  line-height: 1.8;
-}
-.findPlan .__display .item .type4 {
-  font-size: 1.5625rem;
-  font-weight: 700;
-  color: #A1BD04;
-  margin: 30px 0 40px 0;
-}
-.findPlan .__display .item .type5 {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #A1BD04;
-  margin-bottom: 5px;
-}
-.findPlan .__display .item .type6 {
-  font-size: 1rem;
-  font-weight: 600;
-  color: #A1BD04;
-}
-.findPlan .__display .item a {
-  display: inline-block;
-  margin-top: 20px;
-  border-radius: 14px;
-}
-.findPlan .__display .--emphasis {
-  padding: 50px 25px;
-  background: #A1BD04 0% 0% no-repeat padding-box;
-  box-shadow: 0px 15px 30px #A1BD04;
-  border: 1px solid #A1BD04;
-}
-.findPlan .__display .--emphasis .type2 {
-  margin-bottom: 10px;
-}
-.findPlan .__display .--emphasis .type3 {
-  color: #ffffff;
-}
-.findPlan .__display .--emphasis .type3.--gray {
-  color: #5F5F5F;
-}
-.findPlan .__display .--emphasis .type4 {
-  color: #ffffff;
-  margin: 25px 0 50px 0;
-}
-.findPlan .__display .--emphasis .type5 {
-  color: #ffffff;
-}
-.findPlan .__display .--emphasis .type6 {
-  color: #ffffff;
-  margin-bottom: 35px;
-}
-.findPlan .__display .--emphasis a {
-  margin-top: 40px;
-  border: 2px solid #ffffff;
-  color: #ffffff;
-}
-
 /*
   ========================================
   ITEM SOLUTION
@@ -1556,6 +1789,21 @@ All this is done for any sub-level being entered.
   color: #ffffff;
 }
 
+/* TABLET - 600px*/
+@media (max-width: 37.5rem) {
+  .__item_solution div a {
+    width: 160px;
+    height: 180px;
+    padding: 0 15px;
+  }
+  .__item_solution div a * {
+    transition: 0.2s all;
+  }
+  .__item_solution div a span {
+    font-size: 0.875rem;
+    line-height: 15px;
+  }
+}
 /**/
 /**/
 

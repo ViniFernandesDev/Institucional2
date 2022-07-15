@@ -42,7 +42,7 @@
 
                 <ul>
                     <li><a href="#"><img src="assets/img/social/iconInsta.png" alt="Instagram"></a></li>
-                    <li><a href="#"><img src="assets/img/social/iconInsta.png" alt="Facebook"></a></li><!-- ALTERAR ICON -->
+                    <li><a href="#"><img src="assets/img/social/iconFace.png" alt="Facebook"></a></li><!-- ALTERAR ICON -->
                     <li><a href="#"><img src="assets/img/social/iconLinkedin.png" alt="Linkedin"></a></li>
                 </ul>
             </div><!-- item2 -->
@@ -51,7 +51,7 @@
 
         <div class="direitos">
             <p>© Todos os direitos reservados - 2022 - LR Seg</p>
-            <img src="" alt="Logo Studio Alpha">
+            <a href="https://studioalpha.com.br/" target="_blank"><img src="assets/img/studio_alpha.jpg" alt="Logo Studio Alpha"></a>
         </div><!-- direitos -->
     </div><!-- container -->
 </footer>

@@ -40,13 +40,15 @@ header {
     box-shadow: -1px -15px 38px #2a2c42;
 
     & .container {
-      padding: 15px 0;
+      padding-top: 15px;
+      padding-bottom:15px;
     }
   }
 
   & .container {
     @include main.FlexBetCen;
-    padding: 55px 0;
+    padding-top: 55px;
+    padding-bottom:55px;
     transition: 0.3s all;
 
     & .navigation {
@@ -65,6 +67,69 @@ header {
           }
         }
       }
+    }
+  }
+}
+
+/*********
+RESPONSIVE
+**********/
+
+/* DESKTOP LARGE - 1400px*/ 
+@include main.breakpoint(smashDesktopLarge) {
+  header {
+    & .container {
+      & .navigation {
+        & nav ul {
+          & li a {
+            font-size: reset.toRem(18);
+            padding: 10px 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) {
+  header {
+    & .container {
+      & .navigation {
+        & nav ul {
+          & li a {
+            font-size: reset.toRem(16);
+            padding: 10px 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*PERSONALIZATION 1100PX*/
+
+@media screen and (max-width:68.75rem) {
+  header {
+    & .container {
+      align-items: flex-end;
+      padding-top: 25px;
+      padding-bottom:25px;
+
+      & .navigation {
+        display: none;
+      }
+    }
+
+    &.fixed {
+      & .container {
+        padding-top: 15px;
+        padding-bottom:15px;
+      }
+    }
+
+    & .button {
+      display: none;
     }
   }
 }

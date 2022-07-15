@@ -8,15 +8,14 @@
 */
 
 footer {
-  height: 498px;
+  padding: 30px 0;
 
   & .container {
-    height: 100%;
     max-width: 70rem;
 
     & .display {
       @include main.FlexBetCen;
-      height: 90%;
+      margin-bottom: 35px;
 
       & .item1 {
         @include main.FlexBetCen;
@@ -65,7 +64,10 @@ footer {
 
       & .item2 {
         width: 40%;
-        position: relative;
+
+        & form {
+          position: relative;
+        }
 
         & p {
           font-weight: 400;
@@ -78,35 +80,21 @@ footer {
           border-radius: 100px;
           padding-left: 25px;
           width: 100%;
-          border: solid 1px main.$ColorOne;
-          outline-color: main.$ColorMain;
-
         }
 
         & .button {
           width: 110px;
           position: absolute;
-          top: 55px;
+          top: 5px;
           right: 7px;
 
           &.--type_1 input {
-            background: main.$ColorMain;
-            text-align: center;
-            border-radius: 30px;
-            padding: 0;
             height: 45px;
-            background: main.$ColorMain 0% 0% no-repeat padding-box;
-            box-shadow: 0px 15px 30px main.$ColorMain;
-            display: block;
             font-size: reset.toRem(12);
-            font-weight: 600;
-            color: main.$ColorThree;
-            transition: 0.3s all;
-            border: none;
-            cursor: pointer;
             font-weight: 300;
-            text-shadow: 0px 1px 4px #00000040;
             letter-spacing: 0.5px;
+            border: 1px solid main.$ColorMain;
+            padding: 10px 0;
 
             &:hover {
               background: main.$ColorMain2;
@@ -150,9 +138,10 @@ footer {
       @include main.FlexCenCen;
       gap: 10px;
 
-
       & p {
-        font-size: reset.toRem(14);
+        font-size: reset.toRem(10);
+        color: #023859;
+        margin-bottom: 0;
       }
     }
   }
@@ -194,11 +183,12 @@ footer {
 /* LAPTOP - 1024px*/
 @include main.breakpoint(smashLaptop) {
   footer {
-
+    padding-top: 15px;
 
     & .container {
       & .display {
-        margin-top: -60px;
+        height: auto;
+        margin-top: 0px;
         flex-wrap: wrap;
 
         & .item1 {
@@ -218,6 +208,10 @@ footer {
             & a {
               font-size: reset.toRem(20);
             }
+
+            & p {
+              margin-top: 25px;
+            }
           }
 
           & .links {
@@ -227,25 +221,20 @@ footer {
 
         & .item2 {
           width: 100%;
-          margin-top: -70px;
 
           & p {
             margin-top: 0;
             text-align: center;
           }
 
-          & input {
-            width: 90%;
-            margin-left: 5%;
+          & form {
+            max-width: 600px;
+            margin: 0 auto;
           }
 
-          & .button {
-            top: 56px;
-            right: 5%;
-
-            & input {
-              font-size: reset.toRem(12) !important;
-            }
+          & input {
+            width: 100%;
+            margin: 0;
           }
 
           & h2 {
@@ -262,6 +251,7 @@ footer {
 
       & .direitos {
         flex-wrap: wrap;
+
       }
     }
   }

@@ -36,6 +36,7 @@
                     </div><!--__title --type2-->
 
                     <div class="__display">
+                    <div class="__scroll">
                          <div class="item">
                               <span class="type1">Plano Base</span>
                               <span class="type2">R$ 100/m</span>
@@ -75,6 +76,7 @@
                                    <a href="#">CONTRATE JÁ</a>
                               </div><!--button-->
                          </div>
+                    </div><!--__scroll-->
                     </div><!--display-->
 
                     <p>Todos os planos possuem Taxa de Adesão de R$ 500,00<br>

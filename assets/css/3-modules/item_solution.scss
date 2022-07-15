@@ -53,3 +53,22 @@
       }
     }
   }
+
+  /* TABLET - 600px*/ 
+@include main.breakpoint(smashTablet) {
+  .__item_solution div a {
+    width: 160px;
+    height: 180px;
+    padding: 0 15px;
+
+    & * {
+      transition: 0.2s all;
+    }
+
+    & span {
+      font-size: reset.toRem(14);
+      line-height: 15px;
+    }
+  }
+
+}
