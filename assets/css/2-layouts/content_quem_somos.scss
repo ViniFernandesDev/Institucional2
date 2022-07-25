@@ -30,7 +30,7 @@
   & .content_1 {
     overflow: hidden;
     padding-top: 40px;
-    padding-bottom: 20px;
+    padding-bottom: 55px;
 
     & .container {
       & .display {
@@ -39,13 +39,6 @@
 
         & .txt {
           width: 538px;
-
-          & p {
-            color: main.$ColorTwo;
-            letter-spacing: 0;
-            line-height: 2.4;
-            margin: 0;
-          }
 
           & h3 {
             font-size: reset.toRem(25);
@@ -140,7 +133,7 @@
         & .main {
           & h2 {
             color: main.$ColorOne;
-            margin-left: 138px;
+            margin-left: 120px;
             font-size: reset.toRem(40);
             font-weight: bold;
             margin-bottom: 40px;
@@ -198,3 +191,178 @@
     }
   }
 }
+
+/*******
+RESPONSIVE
+*******/
+
+/* PERSONALIZATE- 1500px*/ 
+@media screen and (max-width:1500px) {
+  .sobreNos {
+
+    /* CONTENT_1 */
+    & .content_1 {
+      padding-top: 40px;
+      padding-bottom: 50px;
+  
+      & .container {
+        & .display {
+          gap: 0 100px;
+          padding-right: 8%;
+          justify-content: space-between;
+  
+          & .txt {
+            width: 500px;
+          }
+  
+          & .img {
+            width: 600px;
+          }
+        }
+      }
+    
+    }
+  }
+}
+
+@media screen and (max-width:1300px) {
+  .sobreNos {
+    & .content_2 {
+      margin-top: 20px;
+      padding-bottom: 60px;
+
+      & .container {
+        height: 535px;
+
+        & .content {
+          width:100%;
+        }
+      }
+    }
+  }
+}
+
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) {
+  .sobreNos {
+
+    /* SUB TITLE */
+    & .__subTitle {
+      margin-top: 30px;
+      margin-bottom: 20px;
+
+      & h2,
+      & span {
+        font-size: reset.toRem(32);
+      }
+    }
+
+    /* CONTENT_1 */
+    & .content_1 {
+
+      & .container {
+        & .display {
+          gap: 0 50px;
+          padding: 0;
+  
+          & .txt {
+            width: 500px;
+
+            & h3 {
+              font-size: reset.toRem(18);
+              line-height: 1.4;
+              margin: 20px 0;
+            }
+          }
+  
+          & .img {
+            width: 600px;
+  
+            & .circle1,
+            & .circle2,
+            & .circle3,
+            & .circle4,
+            & .circle5 {
+              display: none;
+            }
+          }
+        }
+      }
+    
+    }
+  }
+}
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) {
+  .sobreNos {
+
+    /* CONTENT_1 */
+    & .content_1 {
+      padding-top: 0;
+      padding-bottom: 25px;
+
+      & .container {
+        & .display {
+  
+          & .txt {
+            width: 100%;
+          }
+  
+          & .img {
+            display: none;
+          }
+        }
+      }
+    
+    }
+
+    /* CONTENT_2 */
+    & .content_2 {
+      padding-bottom: 0;
+      margin-top: 0;
+
+      & .container {
+        height: auto;
+
+        & .content {
+          & .main {
+            text-align: center;
+
+            & h2 {
+              margin-left: 0;
+              font-size: reset.toRem(30);
+              margin-bottom: 30px;
+
+              & br {
+                display: none;
+              }
+            }
+          }
+
+          & .footer {
+            height: auto;
+            max-width: 390px;
+            width: auto;
+            text-align: center;
+            padding: 25px 35px;
+            margin: 0 auto;
+
+            & .button {
+              display: inline-block;
+              margin: 0 auto;
+              width: auto;
+            }
+
+            & .imgMain,
+            & .imgSecond {
+              display: none;
+            }
+          }
+
+        }
+      }
+    }
+  }
+}
+

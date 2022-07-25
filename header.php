@@ -9,7 +9,7 @@
 
         <div class="navigation">
             <div class="menu">
-                <div class="button"></div>
+                <div class="open"></div>
 
                 <nav>
                     <ul>
@@ -21,7 +21,6 @@
                 </nav>
             </div><!--menu-->
         </div><!--navigation-->
-        
 
         <div class="button --type_1">
             <a href="">SOLICITE UMA DEMOSTRAÇÃO</a>

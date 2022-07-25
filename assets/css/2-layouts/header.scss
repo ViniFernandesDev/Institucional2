@@ -112,19 +112,16 @@ RESPONSIVE
 @media screen and (max-width:68.75rem) {
   header {
     & .container {
-      align-items: flex-end;
+      align-items: center;
       padding-top: 25px;
       padding-bottom:25px;
-
-      & .navigation {
-        display: none;
-      }
     }
 
     &.fixed {
       & .container {
         padding-top: 15px;
         padding-bottom:15px;
+        
       }
     }
 
@@ -132,4 +129,74 @@ RESPONSIVE
       display: none;
     }
   }
+}
+
+/* LAPTOP - 1024px*/ 
+@include main.breakpoint(smashLaptop) { 
+  header {
+    & .container {
+      & .navigation {
+        position: relative;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+
+        & .menu {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+        }
+
+        & .open {
+          height: 38px;
+          width: 38px;
+          background: main.$ColorMain url("../img/menu_icon.png") center no-repeat;
+          transition: 0.3s all;
+          border-radius: 5px;
+        }
+
+        & nav {
+          position: absolute;
+          right: 0;
+          top: 38px;
+          width: 200px;
+          background: #ededed;
+          display: flex;
+          flex-wrap: wrap;
+          opacity: 0;
+          z-index: -1;
+          visibility: collapse;
+          transition: 0.2s all;
+          border-radius: 6px;
+          box-shadow: -2px 1px 9px -4px #000000;
+          border-radius: 5px 5px 5px 5px;
+
+          & ul {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+
+            & li a {
+              width: 100%;
+              display: block;
+              font-size: reset.toRem(16)!important;
+              color: main.$ColorOne;
+            }
+          }
+        }
+
+        & .menu.ativo {
+          & nav {
+            opacity: 1;
+            visibility: visible;
+            z-index: inherit;
+          }
+
+          & .open {
+            background: main.$ColorMain url("../img/menu-close.png") center no-repeat;
+          }
+        }
+      } // NAVIGATION
+    }
+  }
+
 }

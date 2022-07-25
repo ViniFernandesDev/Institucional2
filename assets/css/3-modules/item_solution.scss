@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px 0;
+    cursor: pointer;
 
     & * {
       transition: 0.2s all;
@@ -40,6 +41,7 @@
       line-height: 25px;
     }
 
+    &.ativo,
     &:hover {
       background: main.$ColorMain 0% 0% no-repeat padding-box;
       box-shadow: 0px 15px 30px main.$ColorMain;

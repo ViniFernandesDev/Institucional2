@@ -70,7 +70,12 @@
 		padding: 15px 0 30px 0;
 	
 		& h3 {
-			font-size: reset.toRem(25);
+			font-size: reset.toRem(22);
 		}
+
+        & .button a {
+            font-size: reset.toRem(22);
+            padding: 15px 20px;
+        }
 	}
 }

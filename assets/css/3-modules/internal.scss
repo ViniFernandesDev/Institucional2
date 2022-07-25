@@ -34,3 +34,26 @@
     }
 }
 
+/* PERSONALIZATE- 1500px*/ 
+@media screen and (max-width:1500px) {
+    .internal {
+        &.container,
+        & .container {
+            padding: 0 20px;
+        }
+    }    
+}  
+
+/* DESKTOP - 1200px*/ 
+@include main.breakpoint(smashDesktop) {
+    .internal {
+        margin-top: 200px;
+    }
+}
+
+/*PERSONALIZATION 1100PX*/
+@media screen and (max-width:68.75rem) {
+    .internal {
+        margin-top: 180px;
+    }    
+}
